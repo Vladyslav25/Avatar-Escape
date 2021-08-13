@@ -28,8 +28,27 @@ public class VRPlayerHand : MonoBehaviour
     [SerializeField]
     private float m_maxNextPointDistance = 1.2f;
 
+    [SerializeField]
+    private float m_MinCharge = 0.05f;
+
+    [SerializeField]
+    private float m_MaxCharge = 1.0f;
+
+    [SerializeField]
+    private float m_AreaMultiplier = 5.0f;
 
     private float m_SetNextPointTime = 0.0f;
+
+    [SerializeField]
+    private GameObject m_AirBulletPrefab = null;
+
+    private AirBullet m_CurrentAirBullet = null;
+
+    [SerializeField]
+    private float m_AdditionalBulletSpeedBySize = 2.0f;
+
+    [SerializeField]
+    private float m_minBulletSpeed = 2.0f;
 
     private void Awake()
     {
@@ -49,6 +68,12 @@ public class VRPlayerHand : MonoBehaviour
             m_BendingInProgress = true;
             m_BendingStartPos = this.transform.localPosition;
             m_SetNextPointTime = Time.time + m_WhenToSaveNextPoint;
+
+            GameObject bullet = Instantiate(m_AirBulletPrefab, this.transform);
+            
+            m_CurrentAirBullet = bullet.GetComponent< AirBullet>();
+            m_CurrentAirBullet.SetUp(this.transform);
+            m_CurrentAirBullet.SetSize(m_MinCharge);
         }
 
         if (m_StartBending.GetLastStateUp(m_Hand.inputSource))
@@ -102,7 +127,7 @@ public class VRPlayerHand : MonoBehaviour
 
             if (distToLastPosition < m_minNextPointDistance || distToLastPosition > m_maxNextPointDistance)
             {
-                return false;
+                return false; 
             }
         }
 
@@ -132,15 +157,30 @@ public class VRPlayerHand : MonoBehaviour
 
         Debug.Log($"New Area {area}");
 
-        m_totalArea += area; 
+        m_totalArea += area * m_AreaMultiplier;
+
+        m_totalArea = Mathf.Clamp(m_totalArea ,m_MinCharge, m_MaxCharge);
+
+        SetSizeOffAirBullet(m_totalArea); 
+    }
+
+    private void SetSizeOffAirBullet(float m_totalArea)
+    {
+        m_CurrentAirBullet.SetSize(m_totalArea);
     }
 
     private void ShootAirBall()
     {
-
-
         Debug.Log($"Shooting with total area: {m_totalArea}");
         //End
+
+        Rigidbody bulletRB = m_CurrentAirBullet.GetComponent<Rigidbody>();
+        Vector3 speed = m_Hand.GetVelocity();
+        Vector3 forward = speed.normalized;
+        Vector3 velo = speed + (forward * ((m_AdditionalBulletSpeedBySize * m_totalArea) + m_minBulletSpeed));
+        m_CurrentAirBullet.RealeaseBullet(velo);
+        
+        m_CurrentAirBullet = null; 
         m_totalArea = 0.0f;
     }
 
