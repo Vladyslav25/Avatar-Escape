@@ -54,12 +54,12 @@ public class SwimHitter : MonoBehaviour, IHitable
                 health.BoatGotDamage(dmg);
             }
 
-            GotHit(this.transform.position, m_FullyBrokenDamage);
+            GotHit(this.transform.position, m_FullyBrokenDamage + 1);
         }
 
         else if(collision.transform.CompareTag("Boundary"))
         {
-            GotHit(this.transform.position, m_FullyBrokenDamage);
+            GotHit(this.transform.position, m_FullyBrokenDamage + 1);
         }
     }
 

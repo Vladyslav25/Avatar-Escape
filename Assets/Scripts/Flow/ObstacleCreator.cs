@@ -68,7 +68,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 			if (m_counter >= m_creationDelay)
 			{
-				EItem item = (EItem)m_rnd.Next(0, 3);
+				EItem item = (EItem)m_rnd.Next(0, 2);
 				Obstacle obst = PoolControl.Instance.GetItem(item);
 				SetRandomPosition(obst.transform);
 				obst.Speed = GetRandomSpeed();

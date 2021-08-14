@@ -3,6 +3,7 @@ using N_Enum;
 using UnityEngine;
 using N_Pool;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Obstacle : MonoBehaviour
 {
 	public float Speed { get => m_speed; set => m_speed = value; }
