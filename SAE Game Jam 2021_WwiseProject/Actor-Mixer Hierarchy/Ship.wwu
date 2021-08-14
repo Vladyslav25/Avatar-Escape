@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CD698883-6E63-4C36-BC56-F4AF18D347B8}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Ship" ID="{CD698883-6E63-4C36-BC56-F4AF18D347B8}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

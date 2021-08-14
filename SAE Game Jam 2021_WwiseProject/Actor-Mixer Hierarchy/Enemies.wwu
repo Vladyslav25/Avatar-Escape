@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Enemies" ID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Voices" ID="{2B12BDE9-4041-4C4B-BC35-D2A7E45BA6AF}" ShortID="910278509">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Movement" ID="{CB183C12-C0FB-4681-AB8F-04E91F20B5A4}" ShortID="138970876">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

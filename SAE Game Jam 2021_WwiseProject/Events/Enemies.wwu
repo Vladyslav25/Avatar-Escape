@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" SchemaVersion="103" RootDocumentID="{72A11777-5AA3-4182-93D8-EF9B1631819E}" ParentDocumentID="{72A11777-5AA3-4182-93D8-EF9B1631819E}">
+	<Events>
+		<WorkUnit Name="Enemies" ID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" OwnerID="{72A11777-5AA3-4182-93D8-EF9B1631819E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Kampfschrei" ID="{D7D42DB0-0C47-4BF7-A5FB-750F649A5585}">
+					<ChildrenList>
+						<Action Name="" ID="{976AC30A-1AA0-44F0-B96C-C3D296184F23}" ShortID="212557812">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kampfschrei" ID="{E9D58954-966A-4F14-A27E-C8F6D52D75B8}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

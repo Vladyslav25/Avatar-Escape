@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6EB40B66-AD0C-4C1A-AA35-DAED5074C185}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{6EB40B66-AD0C-4C1A-AA35-DAED5074C185}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6EB40B66-AD0C-4C1A-AA35-DAED5074C185}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{30944775-631C-4EB6-BCD7-5633F072D535}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Kampfschrei" ID="{D7D42DB0-0C47-4BF7-A5FB-750F649A5585}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
