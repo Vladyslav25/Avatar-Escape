@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset.meta
+guid: e2ba4fda6862e814d9069ec4cf841a0f
+NativeFormatImporter:
+=======
 guid: e031e02962e93d54d86d9bee6b364f61
 PrefabImporter:
+>>>>>>> develop:Assets/Prefabs/Hand.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
