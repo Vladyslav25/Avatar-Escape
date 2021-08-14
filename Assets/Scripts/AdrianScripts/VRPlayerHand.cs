@@ -96,11 +96,8 @@ public class VRPlayerHand : MonoBehaviour
 
             Vector3 pos = this.transform.localPosition;
 
-            Debug.Log("Bending");
-
             if (!IsValidPoint(pos))
             {
-                Debug.Log("NotValid");
                 return;
             }
 
@@ -155,7 +152,7 @@ public class VRPlayerHand : MonoBehaviour
 
         float area = crossProduct.sqrMagnitude / 2;
 
-        Debug.Log($"New Area {area}");
+        //Debug.Log($"New Area {area}");
 
         m_totalArea += area * m_AreaMultiplier;
 

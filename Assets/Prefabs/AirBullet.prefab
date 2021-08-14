@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6584187420323719869}
   - component: {fileID: 6584187420323719870}
   - component: {fileID: 8944852608889862266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AirBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LifeTime: 20
+  m_bulletStrenghtMuliplier: 10
 --- !u!1 &6584187420394139091
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,7 +75,7 @@ GameObject:
   - component: {fileID: 6584187420394139095}
   - component: {fileID: 6584187420394139088}
   - component: {fileID: 6584187420394139089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,13 @@ public class AirBullet : MonoBehaviour
     private bool m_IsReleased = false;
 
     [SerializeField]
-    private float m_bulletStrenghtMuliplier;
+    private float m_maxStrength = 10.0f;
+
+    [SerializeField]
+    private float m_maxMass = 10.0f;
+
+    [SerializeField]
+    private Vector3 m_maxSize = Vector3.one;
 
     private float m_currentStrength;
     private void Awake()
@@ -63,8 +69,9 @@ public class AirBullet : MonoBehaviour
 
     public void SetSize(float size)
     {
-        m_currentStrength = size * m_bulletStrenghtMuliplier;
-        this.transform.localScale = Vector3.one * size;
+        m_currentStrength = m_maxStrength * size;
+        this.transform.localScale = m_maxSize * size;
+        m_RigidBody.mass = m_maxMass * size;
     }
 
     public void RealeaseBullet(Vector3 velocity)
