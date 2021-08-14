@@ -38,7 +38,7 @@ namespace N_Pool
 			{
 				T item = Instantiate(m_prefabs[_key], transform);
 				m_pools[_key].Enqueue(item);
-				item.gameObject.SetActive(false);
+				// item.gameObject.SetActive(false);
 			}
 		}
 
@@ -53,6 +53,7 @@ namespace N_Pool
 			else
 			{
 				T item = Instantiate(m_prefabs[_key], transform);
+				item.gameObject.SetActive(true);
 				return item;
 			}
 		}
@@ -60,7 +61,7 @@ namespace N_Pool
 		public void ReturnItem(TKey _key, T _item)
 		{
 			m_pools[_key].Enqueue(_item);
-			_item.gameObject.SetActive(false);
+			// _item.gameObject.SetActive(false);
 		}
 	}
 }

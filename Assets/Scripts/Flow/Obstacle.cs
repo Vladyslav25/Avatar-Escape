@@ -11,7 +11,6 @@ public class Obstacle : MonoBehaviour
 	private EItem m_type;
 	private float m_speed;
 	private Rigidbody m_rb;
-	private bool m_onDisableIsActive;
 
 	private void Awake()
 	{
@@ -21,6 +20,11 @@ public class Obstacle : MonoBehaviour
 	private void Update()
 	{
 		BorderCheck();
+	}
+
+	private void OnDisable()
+	{
+		ReturnItem();
 	}
 
 	public void SetVelocity()
@@ -33,17 +37,17 @@ public class Obstacle : MonoBehaviour
 		// end check
 		if (transform.position.z <= ObstacleCreator.Instance.RiverEnd)
 		{
-			ReturnItem();
+			gameObject.SetActive(false);
 		}
 		// side check
 		else if (transform.position.x <= -ObstacleCreator.Instance.RiverHalfWidth ||
 				 transform.position.x >= ObstacleCreator.Instance.RiverHalfWidth )
 		{
-			ReturnItem();
+			gameObject.SetActive(false);
 		}
 	}
 
-	public void ReturnItem()
+	private void ReturnItem()
 	{
 		if (ObstacleCreator.Instance != null)
 			ObstacleCreator.Instance.ObstaclesInMotion--;

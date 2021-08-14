@@ -26,13 +26,15 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 	}
 	public int MaximumObstacles { get => m_maximumObstacles; set => m_maximumObstacles = value; }
 	public float RiverEnd => m_riverEnd;
-	public float RiverHalfWidth => (m_range + m_riverSideOffset) * .5f;
+	public float RiverHalfWidth => (m_instantiateRange + m_riverSideOffset) * .5f;
 
 	[Header("River")]
 	[SerializeField]
 	private float m_riverStart = 20;
 	[SerializeField]
 	private float m_riverEnd = -20;
+	[SerializeField]
+	private float m_instantiateRange = 10;
 	[SerializeField]
 	private float m_riverSideOffset = 2;
 	
@@ -41,8 +43,6 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 	private int m_maximumObstacles = 10;
 	[SerializeField]
 	private float m_creationDelay = 2;
-	[SerializeField]
-	private float m_range = 10;
 	[SerializeField]
 	private float m_maximumSpeed = 10;
 	[SerializeField]
@@ -84,7 +84,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 	private void SetRandomPosition(Transform _transform)
 	{
-		float right = m_range * .5f;
+		float right = m_instantiateRange * .5f;
 		float left = -right;
 
 		float t = (float)m_rnd.NextDouble();
