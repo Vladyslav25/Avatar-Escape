@@ -9,6 +9,9 @@ public class PlayerHealth : MonoBehaviour
 
     private int m_currentHealth;
 
+    [SerializeField]
+    private Flagswitch m_LifeFlag;
+
     private void Awake()
     {
         m_currentHealth = m_maxHealth;
@@ -16,19 +19,18 @@ public class PlayerHealth : MonoBehaviour
 
     public void BoatGotDamage(int amount)
     {
-        m_currentHealth--;
+        m_currentHealth -= amount;
 
         m_currentHealth = m_currentHealth < 0 ? 0 : m_currentHealth;
 
-
-        //TODO: SetHalthInUI
+        m_LifeFlag.HP = m_currentHealth;
 
         CheckForLose();
     }
 
     private void CheckForLose()
     {
-        if(m_currentHealth > 0)
+        if (m_currentHealth > 0)
         {
             return;
         }
@@ -39,11 +41,10 @@ public class PlayerHealth : MonoBehaviour
 
     public void BoatGotHealed(int amount)
     {
-        m_currentHealth++;
+        m_currentHealth += amount;
 
         m_currentHealth = m_currentHealth > m_maxHealth ? m_maxHealth : m_currentHealth;
 
-        //TODO: SetHealthInUI
-
+        m_LifeFlag.HP = m_currentHealth;
     }
 }

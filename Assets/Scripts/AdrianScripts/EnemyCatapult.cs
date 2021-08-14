@@ -39,7 +39,7 @@ public class EnemyCatapult : MonoBehaviour
 
     private void Awake()
     {
-        m_nextSpawn =Time.time + m_TimeBetweenSpawn + Random.Range(m_minRandomSpawnTimeAddition, m_maxRandomSpawnTimeAddition);
+        m_nextSpawn =Random.Range(0.0f, m_TimeBetweenSpawn + m_maxRandomSpawnTimeAddition);
     }
 
     private void Update()
