@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Boat
+  - Boundary
   layers:
   - Default
   - TransparentFX

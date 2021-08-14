@@ -14,6 +14,9 @@ public class EnemyJump : MonoBehaviour
     private float difficulty = 2;
     [SerializeField]
     float goodThrow = 30;
+
+    [SerializeField]
+    private float diffirenceRadius = 0.2f; 
     void Start()
     {
         StartCoroutine(SpawnEnemy());
@@ -23,7 +26,7 @@ public class EnemyJump : MonoBehaviour
         while (true)
         {
             Vector3 newTarget = target.position;
-            newTarget = new Vector3 (Random.Range(-2f, 2f) + target.position.x, target.position.y, Random.Range(0f, 2f) + target.position.z);
+            newTarget = transform.position + (Random.insideUnitSphere * diffirenceRadius);
             float distancediff = newTarget.z - transform.position.z;
             float _random = Random.Range(goodThrow - distancediff * 0.2f, goodThrow + distancediff * 0.2f);
             yield return new WaitForSeconds(Random.Range(0f, 2f) + difficulty);

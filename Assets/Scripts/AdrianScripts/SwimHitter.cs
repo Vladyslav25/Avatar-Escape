@@ -34,6 +34,35 @@ public class SwimHitter : MonoBehaviour, IHitable
     [SerializeField]
     private float m_ExplosionMultiplier = 100.0f;
 
+    [SerializeField]
+    private bool m_IsAHealingObject;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.CompareTag("Boat"))
+        {
+            PlayerHealth health = collision.transform.GetComponent<PlayerHealth>();
+
+
+            if (m_IsAHealingObject)
+            {
+                health.BoatGotDamage(1);
+            }
+            else
+            {
+                int dmg = m_isHalfBroken ? 1 : 2;
+                health.BoatGotDamage(dmg);
+            }
+
+            GotHit(this.transform.position, m_FullyBrokenDamage);
+        }
+
+        else if(collision.transform.CompareTag("Boundary"))
+        {
+            GotHit(this.transform.position, m_FullyBrokenDamage);
+        }
+    }
+
     public void GotHit(Vector3 hitPosition, float bulletStrength)
     {
         m_currentDamage += bulletStrength;
