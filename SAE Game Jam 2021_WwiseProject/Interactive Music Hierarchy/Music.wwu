@@ -162,6 +162,9 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{D9288805-314B-4026-9C6F-E6818EB70802}" ShortID="681795638">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{44E65329-DBE7-4015-B71D-8CB9435BAC45}" ShortID="210063966">
 											<PropertyList>
@@ -217,6 +220,11 @@
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList/>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{2F37EE5B-8448-4160-BFBA-02333333782B}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
@@ -312,6 +320,9 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{D1521872-25AD-4332-82B0-5015A2EB59C1}" ShortID="1024389663">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{169BF257-1177-420B-BCDB-66BD3579F7BF}" ShortID="938209763">
 											<PropertyList>
@@ -464,6 +475,9 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{89466488-CCC5-44F7-A4EE-7CFACBBC582F}" ShortID="486787702">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{CAE1604F-2065-4D7A-946F-6B17A7669C95}" ShortID="329672050">
 											<PropertyList>
