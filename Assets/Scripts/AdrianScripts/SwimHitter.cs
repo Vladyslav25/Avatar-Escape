@@ -43,24 +43,25 @@ public class SwimHitter : MonoBehaviour, IHitable
     private float m_pingPongMinMaxValue;
 
     private float m_randomTimeAdder = 0;
+
+    private float m_localStartY; 
     
     [SerializeField]
     private AK.Wwise.Event barrellCollisionEvent;
 
-    private void Awake()
+    private void Start()
     {
         m_randomTimeAdder = Random.Range(0, 10.0f);
+        m_localStartY = this.transform.localPosition.y;
     }
 
     private void Update()
     {
-
-
         float newY = Mathf.PingPong((Time.time + m_randomTimeAdder) / 2 , m_pingPongMinMaxValue);
 
         Vector3 local = this.transform.localPosition;
 
-        local.y = newY;
+        local.y = m_localStartY + newY;
 
         this.transform.position = local;
     }
