@@ -21,7 +21,6 @@ namespace AK
         static const AkUniqueID PLAY_ENEMY_APPEARS_PIG = 4198696536U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_SPAN = 2108511140U;
         static const AkUniqueID PLAY_ENEMY_GOTHIT = 3822898220U;
-        static const AkUniqueID PLAY_HANDS_WIND = 880268317U;
         static const AkUniqueID PLAY_JINGE_WIN = 3838663630U;
         static const AkUniqueID PLAY_JINGLE_LOSE = 1338643067U;
         static const AkUniqueID PLAY_LEVEL_MUSIC = 557932600U;
@@ -33,6 +32,24 @@ namespace AK
         static const AkUniqueID STOP_MUSIC_LIFE_LOW = 3241769353U;
         static const AkUniqueID STOP_MUSIC_LIFE_MED = 3677840433U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace PLAYER_LIFE
+        {
+            static const AkUniqueID GROUP = 3762137787U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LOW_LIFE = 2791626534U;
+                static const AkUniqueID MAX_LIFE = 1497871086U;
+                static const AkUniqueID MID_LIFE = 2694672098U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ZERO_LIFES = 894548483U;
+            } // namespace STATE
+        } // namespace PLAYER_LIFE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

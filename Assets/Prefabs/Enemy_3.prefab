@@ -145,10 +145,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2226266807410187100}
-  enemyCollisionEvent:
+  boatCollisionEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9a8e45ba3364a463984044cb95d116a9, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 20e111805fa4a4000ae2d172e3854a5c, type: 2}
+  airCollisionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bdee0efdd32a044d9acc7bf9e323bdc7, type: 2}
 --- !u!1 &7399401558166502094
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,6 @@
 						<ObjectRef Name="Play_Enemy_Appears_Pig" ID="{578F4FD2-FD06-4899-86FF-90320BAF732F}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_Music" ID="{0FC87265-E1C7-48AA-8537-D4F03F52BC8C}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_Life_Low" ID="{DAE68E91-82A6-48F4-A8D7-0B18E782271A}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Hands_Wind" ID="{8AA12C35-7C0E-4980-8666-ACBBFD565A1D}" WorkUnitID="{3653E329-4831-4A33-BD8F-7A9AB672E30B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_Life_Med" ID="{95B5CA7C-FAD8-49FD-B1EB-3C1F6E98ACC3}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Enemy_Appears_Normal" ID="{03A63690-34E9-4A8D-BA2A-90D479E6A911}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Enemy_GotHit" ID="{6A55ED47-FF8E-4CDD-8C18-4D80A212266C}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>

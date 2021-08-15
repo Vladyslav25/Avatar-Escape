@@ -45,52 +45,7 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="SoundSeed Air Wind" ID="{D424A938-3B6C-4C1C-B995-71D4D6503875}" ShortID="192388225" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
-											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{AF5A8F0B-1ABC-44DB-B9A6-B2C7376CF2B2}" ShortID="659082850">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Hand_Movement" ID="{DA973791-986F-4589-ABF1-A4A25165DA1E}" WorkUnitID="{331DD7F4-424E-4467-883F-FE481C556D4F}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{95B76037-4841-4B67-A07E-5486BB2C7E4F}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-578.43552</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>2400</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Duration" Type="Real64" Value="9.9"/>
-											</PropertyList>
-											<Language>English(US)</Language>
-											<PluginData/>
-											<PluginInnerObjectList>
-												<List Name="Deflectors">
-													<PluginInnerObject Name="" ID="{F9670804-7663-4B9E-B41C-F675402E0ED4}" PluginName="Deflector" CompanyID="0" PluginID="121"/>
-												</List>
-											</PluginInnerObjectList>
-										</SourcePlugin>
-									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="SoundSeed Air Wind" ID="{D424A938-3B6C-4C1C-B995-71D4D6503875}" Platform="Linked"/>
-									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
