@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SwimHitter : MonoBehaviour, IHitable
 {
@@ -36,6 +37,30 @@ public class SwimHitter : MonoBehaviour, IHitable
 
     [SerializeField]
     private bool m_IsAHealingObject;
+
+
+    [SerializeField]
+    private float m_pingPongMinMaxValue;
+
+    private float m_randomTimeAdder = 0;
+
+    private void Awake()
+    {
+        m_randomTimeAdder = Random.Range(0, 10.0f);
+    }
+
+    private void Update()
+    {
+
+
+        float newY = Mathf.PingPong((Time.time + m_randomTimeAdder) / 2 , m_pingPongMinMaxValue);
+
+        Vector3 local = this.transform.localPosition;
+
+        local.y = newY;
+
+        this.transform.position = local;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {

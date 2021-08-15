@@ -262,9 +262,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f7544423fe5ac14d8f32da2423f7f887
       Path: Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Jap
-      maxAttenuation: 500
-      maxDuration: 4.629333
-      minDuration: 4.629333
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Enemy_Appears_Kiss
       guid: f8f5d4845e86394081be13cf73e96d8b
       id: 3218283006
@@ -282,9 +282,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f8f5d4845e86394081be13cf73e96d8b
       Path: Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Kiss
-      maxAttenuation: 500
-      maxDuration: 2.805333
-      minDuration: 2.805333
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Enemy_Appears_Normal
       guid: 9036a603e9348d4aba2a90d479e6a911
       id: 1637247213
@@ -302,9 +302,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9036a603e9348d4aba2a90d479e6a911
       Path: Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Normal
-      maxAttenuation: 500
-      maxDuration: 5.685333
-      minDuration: 1.429333
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Enemy_Appears_Pig
       guid: d24f8f5706fd994886ff90320baf732f
       id: 4198696536
@@ -322,9 +322,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: d24f8f5706fd994886ff90320baf732f
       Path: Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Pig
-      maxAttenuation: 500
-      maxDuration: 4.992
-      minDuration: 3.84
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Enemy_Appears_Span
       guid: 81be878ebbdf37439a0c1da3713ca1da
       id: 2108511140
@@ -342,9 +342,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 81be878ebbdf37439a0c1da3713ca1da
       Path: Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Span
-      maxAttenuation: 500
-      maxDuration: 3.957333
-      minDuration: 3.082667
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Enemy_GotHit
       guid: 47ed556a8effdd4c8c184d80a212266c
       id: 3822898220
@@ -362,9 +362,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 47ed556a8effdd4c8c184d80a212266c
       Path: Events\Enemies\Enemy_GotHit\Play_Enemy_GotHit
-      maxAttenuation: 500
-      maxDuration: 1.063448
-      minDuration: 0.838885
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Envionment.wwu
     PathAndIcons:
     - ElementName: Events
@@ -457,8 +457,8 @@ MonoBehaviour:
         guid: 50d4c947fb6a0d4686db4d89355b43ce
       Path: Events\Music\Play_Music_Life_Full
       maxAttenuation: 0
-      maxDuration: 59.076916
-      minDuration: 59.076916
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music_Life_Low
       guid: 04be587779e62b4fbecf93996db3b2f6
       id: 800370703
@@ -474,8 +474,8 @@ MonoBehaviour:
         guid: 04be587779e62b4fbecf93996db3b2f6
       Path: Events\Music\Play_Music_Life_Low
       maxAttenuation: 0
-      maxDuration: 59.076916
-      minDuration: 59.076916
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music_Life_Med
       guid: 50dd07f989f39a429e83a4fac11fe894
       id: 1169331431
@@ -491,8 +491,8 @@ MonoBehaviour:
         guid: 50dd07f989f39a429e83a4fac11fe894
       Path: Events\Music\Play_Music_Life_Med
       maxAttenuation: 0
-      maxDuration: 59.076916
-      minDuration: 59.076916
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_Life_Full
       guid: f6b8b5e797e4124ea7f6f72ae0148140
       id: 759250546
@@ -508,8 +508,8 @@ MonoBehaviour:
         guid: f6b8b5e797e4124ea7f6f72ae0148140
       Path: Events\Music\Stop_Music_Life_Full
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_Life_Low
       guid: 918ee6daa682f448a8d70b18e782271a
       id: 3241769353
@@ -525,8 +525,8 @@ MonoBehaviour:
         guid: 918ee6daa682f448a8d70b18e782271a
       Path: Events\Music\Stop_Music_Life_Low
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_Life_Med
       guid: 7ccab595d8fafd49b1eb3c1f6e98acc3
       id: 3677840433
@@ -542,8 +542,8 @@ MonoBehaviour:
         guid: 7ccab595d8fafd49b1eb3c1f6e98acc3
       Path: Events\Music\Stop_Music_Life_Med
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -602,8 +602,8 @@ MonoBehaviour:
         guid: 5246b6e4427ee74d86386829c96e56af
       Path: Events\Ship\Play_Wood_Break
       maxAttenuation: 0
-      maxDuration: 0.961747
-      minDuration: 0.502154
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\UI.wwu
     PathAndIcons:
     - ElementName: Events
@@ -632,8 +632,8 @@ MonoBehaviour:
         guid: d1468d95691d6346af3a6d965547dfd9
       Path: Events\UI\Play_Jinge_Win
       maxAttenuation: 0
-      maxDuration: 16.341333
-      minDuration: 4.992
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Jingle_Lose
       guid: 3a9a6f4ff99bd1479fa1ee7c5ce683af
       id: 1338643067
@@ -649,8 +649,8 @@ MonoBehaviour:
         guid: 3a9a6f4ff99bd1479fa1ee7c5ce683af
       Path: Events\UI\Play_Jingle_Lose
       maxAttenuation: 0
-      maxDuration: 6.218667
-      minDuration: 6.218667
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -691,8 +691,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d2e3d28bf70a7f4e9981353336f56379
     GuidInternal: 
-    m_lastTime: -8585726508745828520
-    List: []
+    m_lastTime: -8585725782825790012
+    List:
+    - name: Player_Life
+      guid: 910970fbe64e5c4cbe311a98b532cfb1
+      id: 3762137787
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d2e3d28bf70a7f4e9981353336f56379
+      - ElementName: Player_Life
+        ObjectType: 9
+        guid: 910970fbe64e5c4cbe311a98b532cfb1
+      Path: States\Default Work Unit\Player_Life
+      values:
+      - name: Low_Life
+        guid: ccf8c27e114d5942ae5d6d6189f713c0
+        id: 2791626534
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e3d28bf70a7f4e9981353336f56379
+        - ElementName: Player_Life
+          ObjectType: 9
+          guid: 910970fbe64e5c4cbe311a98b532cfb1
+        - ElementName: Low_Life
+          ObjectType: 8
+          guid: ccf8c27e114d5942ae5d6d6189f713c0
+      - name: Max_Life
+        guid: 66725bc404494f4ea9e0da6d0a2b9220
+        id: 1497871086
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e3d28bf70a7f4e9981353336f56379
+        - ElementName: Player_Life
+          ObjectType: 9
+          guid: 910970fbe64e5c4cbe311a98b532cfb1
+        - ElementName: Max_Life
+          ObjectType: 8
+          guid: 66725bc404494f4ea9e0da6d0a2b9220
+      - name: Mid_Life
+        guid: 6a63a8ce32dd74479ef5ec61508fa08b
+        id: 2694672098
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e3d28bf70a7f4e9981353336f56379
+        - ElementName: Player_Life
+          ObjectType: 9
+          guid: 910970fbe64e5c4cbe311a98b532cfb1
+        - ElementName: Mid_Life
+          ObjectType: 8
+          guid: 6a63a8ce32dd74479ef5ec61508fa08b
+      - name: None
+        guid: 30b55d9bd7fc1f4a89cddc89904a428a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e3d28bf70a7f4e9981353336f56379
+        - ElementName: Player_Life
+          ObjectType: 9
+          guid: 910970fbe64e5c4cbe311a98b532cfb1
+        - ElementName: None
+          ObjectType: 8
+          guid: 30b55d9bd7fc1f4a89cddc89904a428a
+      - name: Zero_Lifes
+        guid: a11c413b5cbe3e4ab4d5507ce4cfbfa2
+        id: 894548483
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e3d28bf70a7f4e9981353336f56379
+        - ElementName: Player_Life
+          ObjectType: 9
+          guid: 910970fbe64e5c4cbe311a98b532cfb1
+        - ElementName: Zero_Lifes
+          ObjectType: 8
+          guid: a11c413b5cbe3e4ab4d5507ce4cfbfa2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:

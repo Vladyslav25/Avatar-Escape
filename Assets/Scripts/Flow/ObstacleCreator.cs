@@ -130,7 +130,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 		
 		float posX = Mathf.Lerp(left, right, t);
 
-		_transform.position = new Vector3(posX, _transform.position.y, m_riverStart);
+		_transform.position = new Vector3(posX, this.transform.position.y, m_riverStart);
 	}
 
 	private float LastPositionCheck(float _value, out bool _leave)
