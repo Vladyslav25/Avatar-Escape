@@ -20,9 +20,9 @@ namespace N_Pool
 			public T Item { get => m_item; set => m_item = value; }
 			public int PoolStartSize { get => m_poolStartSize; set => m_poolStartSize = value; }
 			
-			[SerializeField]
+			[SerializeField, Tooltip("Component of Prefab")]
 			private T m_item;
-			[SerializeField]
+			[SerializeField, Tooltip("Pool Start Size")]
 			private int m_poolStartSize;
 		}
 

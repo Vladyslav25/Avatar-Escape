@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1113410796647924629}
   - component: {fileID: -2692682745914357005}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: RiverSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
