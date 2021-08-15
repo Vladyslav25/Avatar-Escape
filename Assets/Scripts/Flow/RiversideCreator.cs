@@ -12,15 +12,14 @@ public class RiversideCreator : GenericSingleton<RiversideCreator>
 
     [SerializeField] private float m_riverSideSpeed = 5f;
 
-    [SerializeField] private int amountOfTerrain = 2;
-
-	private List<RiverSide> m_prefabsLeft = new List<RiverSide>();
-	private List<RiverSide> m_prefabsRight = new List<RiverSide>();
-
-	private RiverSide m_prefabLeft;
+    private RiverSide m_prefabLeft;
 	private RiverSide m_prefabLeft2;
+	private RiverSide m_prefabLeft3;
+	private RiverSide m_prefabLeft4;
 	private RiverSide m_prefabRight;
 	private RiverSide m_prefabRight2;
+    private RiverSide m_prefabRight3;
+    private RiverSide m_prefabRight4;
 
 	private MeshRenderer m_meshRenderer;
 
@@ -54,8 +53,12 @@ public class RiversideCreator : GenericSingleton<RiversideCreator>
 		
 		m_prefabLeft = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
 		m_prefabLeft2 = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
+		m_prefabLeft3 = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
+		m_prefabLeft4 = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
 		m_prefabRight = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
 		m_prefabRight2 = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
+        m_prefabRight3 = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
+        m_prefabRight4 = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
 
 		float geoHalfExtends = m_meshRenderer.bounds.extents.x;
 		m_prefabLeft.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth - geoHalfExtends + m_prefabLeft.transform.position.x, 0, 0);
@@ -70,9 +73,25 @@ public class RiversideCreator : GenericSingleton<RiversideCreator>
 		m_prefabRight2.transform.Rotate(Vector3.up, 180, Space.World);
         m_prefabRight2.gameObject.SetActive(true);
 
-		m_prefabLeft.Init(ObstacleCreator.Instance.RiverEnd);
+        m_prefabLeft3.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth - geoHalfExtends + m_prefabLeft3.transform.position.x, 0, 0);
+        m_prefabLeft3.gameObject.SetActive(true);
+        m_prefabRight3.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends + m_prefabRight3.transform.position.x - 20, 0, 0);
+        m_prefabRight3.transform.Rotate(Vector3.up, 180, Space.World);
+        m_prefabRight3.gameObject.SetActive(true);
+
+        m_prefabLeft4.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth - geoHalfExtends + m_prefabLeft4.transform.position.x, 0, 0);
+        m_prefabLeft4.gameObject.SetActive(true);
+        m_prefabRight4.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends + m_prefabRight4.transform.position.x - 20, 0, 0);
+        m_prefabRight4.transform.Rotate(Vector3.up, 180, Space.World);
+        m_prefabRight4.gameObject.SetActive(true);
+
+        m_prefabLeft.Init(ObstacleCreator.Instance.RiverEnd);
 		m_prefabRight.Init(ObstacleCreator.Instance.RiverEnd);
-        m_prefabLeft2.Init(ObstacleCreator.Instance.RiverEnd, true);
-		m_prefabRight2.Init(ObstacleCreator.Instance.RiverEnd, true);
+        m_prefabLeft2.Init(ObstacleCreator.Instance.RiverEnd, 1);
+		m_prefabRight2.Init(ObstacleCreator.Instance.RiverEnd, 1);
+	    m_prefabLeft3.Init(ObstacleCreator.Instance.RiverEnd, 2);
+		m_prefabRight3.Init(ObstacleCreator.Instance.RiverEnd, 2);
+	    m_prefabLeft4.Init(ObstacleCreator.Instance.RiverEnd, 3);
+		m_prefabRight4.Init(ObstacleCreator.Instance.RiverEnd, 3);
 	}
 }
