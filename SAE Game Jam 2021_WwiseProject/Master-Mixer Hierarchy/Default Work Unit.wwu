@@ -31,13 +31,6 @@
 							</PropertyList>
 							<ObjectLists/>
 						</Bus>
-						<Bus Name="Wind" ID="{0D47813D-A346-4FD8-A3D1-0549F09FEB90}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="6"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists/>
-						</Bus>
 						<Bus Name="Player" ID="{126BCCDE-AE68-4656-9AE1-C439B90AA840}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="13"/>

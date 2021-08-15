@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Music" ID="{20727CD3-456C-49C5-BC8F-A24655193961}" ShortID="397248954">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{2B922A02-9F27-4822-9256-83169C1AD2E6}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Music_Life_Full" ID="{7921619C-D968-4923-8B1E-219B4EB23BF9}" ShortID="920722023">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{5AC08A7C-6077-4202-9846-9AE12F145510}">
+									<Language>SFX</Language>
+									<AudioFile>Game Jam_Avatar Escape_Soundtrack [3 Lives].wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="669942188"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{5AC08A7C-6077-4202-9846-9AE12F145510}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Music_Life_Low" ID="{6DF310D6-B3BE-46B7-8C7A-0E70742B44F5}" ShortID="672511871">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{2B922A02-9F27-4822-9256-83169C1AD2E6}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{B1B40678-2368-4F5B-A06B-E3F88C60BE49}">
+									<Language>SFX</Language>
+									<AudioFile>Game Jam_Avatar Escape_Soundtrack [ 1 Live].wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="829573962"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{B1B40678-2368-4F5B-A06B-E3F88C60BE49}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Music_Life_Med" ID="{24763C58-7F46-4291-A4BE-1C8F93E02D28}" ShortID="784919503">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{2B922A02-9F27-4822-9256-83169C1AD2E6}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{27CD21DB-CA45-4CE0-B2A2-53423BD0EE91}">
+									<Language>SFX</Language>
+									<AudioFile>Game Jam_Avatar Escape_Soundtrack [2 Lives].wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="938165983"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{27CD21DB-CA45-4CE0-B2A2-53423BD0EE91}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Music_Menu" ID="{7B8F4F9F-3C88-4863-A524-01C986D701C4}" ShortID="350737839">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

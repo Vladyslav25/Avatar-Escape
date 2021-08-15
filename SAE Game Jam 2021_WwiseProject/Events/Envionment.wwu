@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{015393D1-5444-457C-B004-AD438BC517ED}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Envionment" ID="{015393D1-5444-457C-B004-AD438BC517ED}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Ambience_Wind" ID="{9872D670-F174-422A-8E56-590430EC6965}">
+					<ChildrenList>
+						<Action Name="" ID="{95ACDE40-F3D9-40C2-ABD9-343146EFB1D9}" ShortID="2330495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{953F6820-587F-47FD-AE5C-3D383E533F25}" WorkUnitID="{3C43048A-F85E-4F0D-8F93-288D4E4AAE85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_Water" ID="{325FBA51-A0DE-4E8C-B907-0E80F1C4C978}">
+					<ChildrenList>
+						<Action Name="" ID="{4122922E-EA05-4D07-A6EA-D137C4C61494}" ShortID="91453789">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Water" ID="{1DDCC014-C361-4028-A2B1-A380AF04A3C1}" WorkUnitID="{3C43048A-F85E-4F0D-8F93-288D4E4AAE85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

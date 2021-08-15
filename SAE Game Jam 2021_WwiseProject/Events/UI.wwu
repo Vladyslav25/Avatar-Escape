@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{856238D8-6E21-443A-888B-8A96C4F64070}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="UI" ID="{856238D8-6E21-443A-888B-8A96C4F64070}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Jinge_Win" ID="{958D46D1-1D69-4663-AF3A-6D965547DFD9}">
+					<ChildrenList>
+						<Action Name="" ID="{FFD28AF2-8752-4CFA-9CDB-2401CCE92B8E}" ShortID="359336935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jinge_Win" ID="{B6F476CA-20BA-418B-BB46-C0748C5D6C18}" WorkUnitID="{2E94C3A1-AE87-45B7-8783-5B8CC4EAC7BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jingle_Lose" ID="{4F6F9A3A-9BF9-47D1-9FA1-EE7C5CE683AF}">
+					<ChildrenList>
+						<Action Name="" ID="{C0FC02A5-D617-4845-9AF0-BE342EC1E529}" ShortID="49511073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jingle_Lose" ID="{6E6ED99C-08CC-4557-85F7-C55B48A78257}" WorkUnitID="{2E94C3A1-AE87-45B7-8783-5B8CC4EAC7BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

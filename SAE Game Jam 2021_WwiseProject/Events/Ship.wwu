@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{15578107-0754-4DC7-AA5F-65A012B049C6}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Ship" ID="{15578107-0754-4DC7-AA5F-65A012B049C6}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Wood_Break" ID="{E4B64652-7E42-4DE7-8638-6829C96E56AF}">
+					<ChildrenList>
+						<Action Name="" ID="{A03F9D39-8F5C-491B-8759-3A9283C22019}" ShortID="701298960">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wood_Break" ID="{23BFE284-AEA2-4DBF-8AD5-5293F35C04FD}" WorkUnitID="{CD698883-6E63-4C36-BC56-F4AF18D347B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
