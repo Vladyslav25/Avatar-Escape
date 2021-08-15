@@ -369,7 +369,7 @@ MonoBehaviour:
   m_riverEnd: -40
   m_instantiateRange: 80
   m_riverSideOffset: 2
-  m_maximumObstacles: 80
+  m_maximumObstacles: 100
   m_creationDelay: 0.1
   m_minimumSpeed: 10
   m_maximumSpeed: 10

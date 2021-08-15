@@ -126,3 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_type: 2
+  m_fadeTime: 1
+  m_uniformFadeMinimumScale: 0
+  m_uniformFadeMaximumScale: 1

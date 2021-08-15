@@ -97,6 +97,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 				EItem item = (EItem)m_rnd.Next(0, PoolControl.Instance.Prefabs.Length);
 				Obstacle obst = PoolControl.Instance.GetItem(item);
 				SetRandomPosition(obst.transform);
+				obst.BorderReached = false;
 				obst.Speed = GetRandomSpeed();
 				obst.transform.localEulerAngles = GetRandomRotation();
 				obst.SetVelocity();
@@ -117,8 +118,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 		while (true)
 		{
-			t = (float)m_rnd.NextDouble();
-			t = LastPositionCheck(t, out bool leave);
+			t = LastPositionCheck((float)m_rnd.NextDouble(), out bool leave);
 
 			if (leave)
 				break;
