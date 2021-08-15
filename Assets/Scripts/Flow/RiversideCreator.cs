@@ -12,17 +12,24 @@ public class RiversideCreator : GenericSingleton<RiversideCreator>
 	private RiverSide m_prefabLeft;
 	private RiverSide m_prefabRight;
 
-	private void Start()
+	private MeshRenderer m_meshRenderer;
+
+	protected override void Awake()
 	{
-		// MeshRenderer r;
-		// r.bounds
+		base.Awake();
+	}
+
+	private void Start()
+	{		
+		m_meshRenderer = LevelGeoPool.Instance.Prefabs[0].Item.GetComponent<MeshRenderer>();
 		
 		m_prefabLeft = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
 		m_prefabRight = LevelGeoPool.Instance.GetItem(ELevelGeo.RiverSide);
 
-		m_prefabLeft.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth, 0, 0);
+		float geoHalfExtends = m_meshRenderer.bounds.extents.x;
+		m_prefabLeft.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth - geoHalfExtends, 0, 0);
 		m_prefabLeft.gameObject.SetActive(true);
-		m_prefabRight.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth, 0, 0);
+		m_prefabRight.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends, 0, 0);
 		m_prefabRight.gameObject.SetActive(true);
 	}
 }
