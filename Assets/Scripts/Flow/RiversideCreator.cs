@@ -60,12 +60,14 @@ public class RiversideCreator : GenericSingleton<RiversideCreator>
 		float geoHalfExtends = m_meshRenderer.bounds.extents.x;
 		m_prefabLeft.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth - geoHalfExtends + m_prefabLeft.transform.position.x, 0, 0);
         m_prefabLeft.gameObject.SetActive(true);
-		m_prefabRight.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends + m_prefabRight.transform.position.x, 0, 0);
-        m_prefabRight.gameObject.SetActive(true);
+		m_prefabRight.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends + m_prefabRight.transform.position.x -20, 0, 0);
+        m_prefabRight.transform.Rotate(Vector3.up, 180, Space.World);
+		m_prefabRight.gameObject.SetActive(true);
 
         m_prefabLeft2.transform.position = new Vector3(-ObstacleCreator.Instance.RiverHalfWidth - geoHalfExtends + m_prefabLeft2.transform.position.x, 0, 0);
         m_prefabLeft2.gameObject.SetActive(true);
-        m_prefabRight2.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends + m_prefabRight2.transform.position.x, 0, 0);
+        m_prefabRight2.transform.position = new Vector3(ObstacleCreator.Instance.RiverHalfWidth + geoHalfExtends + m_prefabRight2.transform.position.x - 20, 0, 0);
+		m_prefabRight2.transform.Rotate(Vector3.up, 180, Space.World);
         m_prefabRight2.gameObject.SetActive(true);
 
 		m_prefabLeft.Init(ObstacleCreator.Instance.RiverEnd);
