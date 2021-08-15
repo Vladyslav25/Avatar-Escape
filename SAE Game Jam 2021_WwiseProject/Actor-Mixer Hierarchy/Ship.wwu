@@ -6,6 +6,255 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Ship" ID="{1CF3C868-FBA9-44BC-821C-8CAF84ADB0E5}" ShortID="732257287">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ship" ID="{C06B5354-28DB-4A81-851C-56395B13EBB6}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Wood_Break" ID="{356787D4-594F-4B3C-B1BB-EFB2DDE68918}" ShortID="371271129">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Wood_Break" ID="{23BFE284-AEA2-4DBF-8AD5-5293F35C04FD}" ShortID="1062254245">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WoodBreak 6100_01" ID="{F5D1A5D5-3C0A-4000-BADE-7F38C72E767A}" ShortID="347827231">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_63" ID="{6A1CC585-7BA7-42F9-B031-ADC5EAB40D87}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.050174800110284"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.114033636614282"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.30347945960849"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.92838378825476"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_63.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="241567670"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_63" ID="{6A1CC585-7BA7-42F9-B031-ADC5EAB40D87}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodBreak 6100_58_1" ID="{B78AA637-E3E4-42A4-8504-153A10230D71}" ShortID="100879263">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_58_1" ID="{D6AC4E8C-06BC-4F6C-A8F0-311D053F8075}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0497954232147781"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.216756548111387"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.159638268541494"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.06474331403364"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_58_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="839989347"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_58_1" ID="{D6AC4E8C-06BC-4F6C-A8F0-311D053F8075}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodBreak 6100_58_2" ID="{4514E970-F0EC-40E0-B7A1-9BE24A209FCE}" ShortID="180630128">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_58_2" ID="{934C384B-531D-48E0-AACE-2B4B40B1B490}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0499718775847808"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0677584780810587"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0262564102564103"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.784304383788255"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_58_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="993375297"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_58_2" ID="{934C384B-531D-48E0-AACE-2B4B40B1B490}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodBreak 6100_59_2" ID="{AC4A2F55-53F3-4884-9BC7-3F5EF59C383D}" ShortID="422218032">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_59_2" ID="{62808142-194C-4639-8C65-C21FA23E1DC4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0601709401709402"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0454017094017094"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.141128205128205"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.643282051282051"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_59_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="626984413"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_59_2" ID="{62808142-194C-4639-8C65-C21FA23E1DC4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodBreak 6100_60_2" ID="{5DDD69CC-15A9-478D-9DBA-A1CC0DB5B103}" ShortID="189673027">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_60_2" ID="{EAA598FF-DFCB-4FF4-BDEE-7E4CF733F98B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0724168734491315"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.205816377171216"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.151186104218362"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.11293300248139"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_60_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="706360365"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_60_2" ID="{EAA598FF-DFCB-4FF4-BDEE-7E4CF733F98B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodBreak 6100_63" ID="{3BC27223-9428-4412-A30D-B52B29919C65}" ShortID="630570457">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_63" ID="{9BE9A3F0-4BF5-4C69-95AA-9B94E03936E8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.050174800110284"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.114033636614282"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.104910945685139"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.707008547008547"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_63.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="97331437"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_63" ID="{9BE9A3F0-4BF5-4C69-95AA-9B94E03936E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodBreak 6100_65_1" ID="{92205CC9-E7DE-481A-B079-D706860E985E}" ShortID="487975665">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodBreak 6100_65_1" ID="{A24269F1-D986-4159-BE59-FE91D7280627}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.306792390405294"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.922150537634408"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodBreak 6100_65_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="272144354"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodBreak 6100_65_1" ID="{A24269F1-D986-4159-BE59-FE91D7280627}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

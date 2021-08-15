@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3653E329-4831-4A33-BD8F-7A9AB672E30B}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Player" ID="{3653E329-4831-4A33-BD8F-7A9AB672E30B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Hands_Wind" ID="{8AA12C35-7C0E-4980-8666-ACBBFD565A1D}">
+					<ChildrenList>
+						<Action Name="" ID="{66F50D63-5D93-442E-9A96-741FD5B5DD1E}" ShortID="612187128">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{D455ADF0-169E-49BD-B138-7C7C547236EE}" WorkUnitID="{B896E5A1-77E3-413E-8687-058C06A754D5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

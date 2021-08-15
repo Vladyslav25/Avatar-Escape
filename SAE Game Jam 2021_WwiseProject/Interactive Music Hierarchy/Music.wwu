@@ -8,12 +8,16 @@
 			</PropertyList>
 			<ChildrenList>
 				<MusicSwitchContainer Name="Level_Music" ID="{8D1F3A0B-C68B-4C71-B8A3-33C6DD0B0A15}" ShortID="754380807">
+					<PropertyList>
+						<Property Name="GridOffsetPreset" Type="int16" Value="53"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+							<ObjectRef Name="Music" ID="{2B922A02-9F27-4822-9256-83169C1AD2E6}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

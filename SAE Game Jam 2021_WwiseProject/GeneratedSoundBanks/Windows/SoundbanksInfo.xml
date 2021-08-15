@@ -11,17 +11,37 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2287051021">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3551001312">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3474499867">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3870741040">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="511960625" Name="Play_Enemy_Appears_Jap" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Jap" DurationType="OneShot" DurationMin="4.629333" DurationMax="4.629333">
+				<Event Id="2546603034" Name="Play_Ambience_Water" ObjectPath="\Events\Envionment\Play_Ambience_Water" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="734783677" Language="SFX">
+							<ShortName>WaterStream 6060_54.wav</ShortName>
+							<Path>SFX/WaterStream 6060_54_D4A5C766.wem</Path>
+						</File>
+						<File Id="808761125" Language="SFX">
+							<ShortName>WaterLake 6060_51.wav</ShortName>
+							<Path>SFX/WaterLake 6060_51_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1913801107" Name="Play_Ambience_Wind" ObjectPath="\Events\Envionment\Play_Ambience_Wind" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="479068035" Language="SFX">
+							<ShortName>Wind 6036_42.wav</ShortName>
+							<Path>SFX/Wind 6036_42_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="511960625" Name="Play_Enemy_Appears_Jap" ObjectPath="\Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Jap" MaxAttenuation="500.000000" DurationType="OneShot" DurationMin="4.629333" DurationMax="4.629333">
 					<IncludedMemoryFiles>
 						<File Id="848202817" Language="SFX">
 							<ShortName>Anime.wav</ShortName>
@@ -29,7 +49,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3218283006" Name="Play_Enemy_Appears_Kiss" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Kiss" DurationType="OneShot" DurationMin="2.805333" DurationMax="2.805333">
+				<Event Id="3218283006" Name="Play_Enemy_Appears_Kiss" ObjectPath="\Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Kiss" MaxAttenuation="500.000000" DurationType="OneShot" DurationMin="2.805333" DurationMax="2.805333">
 					<IncludedMemoryFiles>
 						<File Id="1052907634" Language="SFX">
 							<ShortName>Kiss 1.wav</ShortName>
@@ -37,7 +57,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1637247213" Name="Play_Enemy_Appears_Normal" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Normal" DurationType="OneShot" DurationMin="1.429333" DurationMax="5.685333">
+				<Event Id="1637247213" Name="Play_Enemy_Appears_Normal" ObjectPath="\Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Normal" MaxAttenuation="500.000000" DurationType="OneShot" DurationMin="1.429333" DurationMax="5.685333">
 					<IncludedMemoryFiles>
 						<File Id="6156648" Language="SFX">
 							<ShortName>Assvatar.wav</ShortName>
@@ -55,6 +75,10 @@
 							<ShortName>Charmeur 1.wav</ShortName>
 							<Path>SFX/Charmeur 1_10C4C929.wem</Path>
 						</File>
+						<File Id="225001084" Language="SFX">
+							<ShortName>Whoooh 4.wav</ShortName>
+							<Path>SFX/Whoooh 4_10C4C929.wem</Path>
+						</File>
 						<File Id="355539363" Language="SFX">
 							<ShortName>Arrrrrrrrr.wav</ShortName>
 							<Path>SFX/Arrrrrrrrr_10C4C929.wem</Path>
@@ -67,9 +91,25 @@
 							<ShortName>Charmeur 2.wav</ShortName>
 							<Path>SFX/Charmeur 2_10C4C929.wem</Path>
 						</File>
+						<File Id="544807894" Language="SFX">
+							<ShortName>Whoooh 2.wav</ShortName>
+							<Path>SFX/Whoooh 2_10C4C929.wem</Path>
+						</File>
+						<File Id="587846388" Language="SFX">
+							<ShortName>Whoooh 5.wav</ShortName>
+							<Path>SFX/Whoooh 5_10C4C929.wem</Path>
+						</File>
 						<File Id="596498803" Language="SFX">
 							<ShortName>You cant see.wav</ShortName>
 							<Path>SFX/You cant see_10C4C929.wem</Path>
+						</File>
+						<File Id="600141153" Language="SFX">
+							<ShortName>Whoooh 3.wav</ShortName>
+							<Path>SFX/Whoooh 3_10C4C929.wem</Path>
+						</File>
+						<File Id="802263471" Language="SFX">
+							<ShortName>Whoooh 1.wav</ShortName>
+							<Path>SFX/Whoooh 1_10C4C929.wem</Path>
 						</File>
 						<File Id="807975672" Language="SFX">
 							<ShortName>Dark Laugh.wav</ShortName>
@@ -93,7 +133,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4198696536" Name="Play_Enemy_Appears_Pig" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Pig" DurationType="OneShot" DurationMin="3.840000" DurationMax="4.992000">
+				<Event Id="4198696536" Name="Play_Enemy_Appears_Pig" ObjectPath="\Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Pig" MaxAttenuation="500.000000" DurationType="OneShot" DurationMin="3.840000" DurationMax="4.992000">
 					<IncludedMemoryFiles>
 						<File Id="171600350" Language="SFX">
 							<ShortName>Pig 1.wav</ShortName>
@@ -105,7 +145,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2108511140" Name="Play_Enemy_Appears_Span" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Span" DurationType="OneShot" DurationMin="3.082667" DurationMax="3.957333">
+				<Event Id="2108511140" Name="Play_Enemy_Appears_Span" ObjectPath="\Events\Enemies\Enemy_Voices\Play_Enemy_Appears_Span" MaxAttenuation="500.000000" DurationType="OneShot" DurationMin="3.082667" DurationMax="3.957333">
 					<IncludedMemoryFiles>
 						<File Id="34855469" Language="SFX">
 							<ShortName>Spanisch 1.wav</ShortName>
@@ -121,6 +161,106 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3822898220" Name="Play_Enemy_GotHit" ObjectPath="\Events\Enemies\Enemy_GotHit\Play_Enemy_GotHit" MaxAttenuation="500.000000" DurationType="OneShot" DurationMin="0.838885" DurationMax="1.063448">
+					<IncludedMemoryFiles>
+						<File Id="211462027" Language="SFX">
+							<ShortName>Fist Leather 8.wav</ShortName>
+							<Path>SFX/Fist Leather 8_10C4C929.wem</Path>
+						</File>
+						<File Id="513689066" Language="SFX">
+							<ShortName>Fist Leather 21.wav</ShortName>
+							<Path>SFX/Fist Leather 21_10C4C929.wem</Path>
+						</File>
+						<File Id="657150734" Language="SFX">
+							<ShortName>Impact 3.wav</ShortName>
+							<Path>SFX/Impact 3_10C4C929.wem</Path>
+						</File>
+						<File Id="916588821" Language="SFX">
+							<ShortName>Fist Leather 26.wav</ShortName>
+							<Path>SFX/Fist Leather 26_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3838663630" Name="Play_Jinge_Win" ObjectPath="\Events\UI\Play_Jinge_Win" DurationType="OneShot" DurationMin="4.992000" DurationMax="16.341333">
+					<IncludedMemoryFiles>
+						<File Id="45049943" Language="SFX">
+							<ShortName>CrowdApplause 6013_02_2.wav</ShortName>
+							<Path>SFX/CrowdApplause 6013_02_2_10C4C929.wem</Path>
+						</File>
+						<File Id="749215583" Language="SFX">
+							<ShortName>CrowdYelling 6013_98_1.wav</ShortName>
+							<Path>SFX/CrowdYelling 6013_98_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1338643067" Name="Play_Jingle_Lose" ObjectPath="\Events\UI\Play_Jingle_Lose" DurationType="OneShot" DurationMin="6.218667" DurationMax="6.218667">
+					<IncludedMemoryFiles>
+						<File Id="455709085" Language="SFX">
+							<ShortName>CrowdBooing 6013_78_1.wav</ShortName>
+							<Path>SFX/CrowdBooing 6013_78_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="557932600" Name="Play_Level_Music" ObjectPath="\Events\Music\Play_Level_Music" DurationType="Infinite"/>
+				<Event Id="2144505736" Name="Play_Music_Life_Full" ObjectPath="\Events\Music\Play_Music_Life_Full" DurationType="OneShot" DurationMin="59.076916" DurationMax="59.076916">
+					<IncludedMemoryFiles>
+						<File Id="669942188" Language="SFX">
+							<ShortName>Game Jam_Avatar Escape_Soundtrack [3 Lives].wav</ShortName>
+							<Path>SFX/Game Jam_Avatar Escape_Soundtrack [3 Lives]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="800370703" Name="Play_Music_Life_Low" ObjectPath="\Events\Music\Play_Music_Life_Low" DurationType="OneShot" DurationMin="59.076916" DurationMax="59.076916">
+					<IncludedMemoryFiles>
+						<File Id="829573962" Language="SFX">
+							<ShortName>Game Jam_Avatar Escape_Soundtrack [ 1 Live].wav</ShortName>
+							<Path>SFX/Game Jam_Avatar Escape_Soundtrack [ 1 Live]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1169331431" Name="Play_Music_Life_Med" ObjectPath="\Events\Music\Play_Music_Life_Med" DurationType="OneShot" DurationMin="59.076916" DurationMax="59.076916">
+					<IncludedMemoryFiles>
+						<File Id="938165983" Language="SFX">
+							<ShortName>Game Jam_Avatar Escape_Soundtrack [2 Lives].wav</ShortName>
+							<Path>SFX/Game Jam_Avatar Escape_Soundtrack [2 Lives]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1136267813" Name="Play_Wood_Break" ObjectPath="\Events\Ship\Play_Wood_Break" DurationType="OneShot" DurationMin="0.502154" DurationMax="0.961747">
+					<IncludedMemoryFiles>
+						<File Id="97331437" Language="SFX">
+							<ShortName>WoodBreak 6100_63.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_63_14650F5D.wem</Path>
+						</File>
+						<File Id="241567670" Language="SFX">
+							<ShortName>WoodBreak 6100_63.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_63_B793BB93.wem</Path>
+						</File>
+						<File Id="272144354" Language="SFX">
+							<ShortName>WoodBreak 6100_65_1.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_65_1_37722B5B.wem</Path>
+						</File>
+						<File Id="626984413" Language="SFX">
+							<ShortName>WoodBreak 6100_59_2.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_59_2_56DD6270.wem</Path>
+						</File>
+						<File Id="706360365" Language="SFX">
+							<ShortName>WoodBreak 6100_60_2.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_60_2_CA18365A.wem</Path>
+						</File>
+						<File Id="839989347" Language="SFX">
+							<ShortName>WoodBreak 6100_58_1.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_58_1_0B30192D.wem</Path>
+						</File>
+						<File Id="993375297" Language="SFX">
+							<ShortName>WoodBreak 6100_58_2.wav</ShortName>
+							<Path>SFX/WoodBreak 6100_58_2_655E62A7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="759250546" Name="Stop_Music_Life_Full" ObjectPath="\Events\Music\Stop_Music_Life_Full" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3241769353" Name="Stop_Music_Life_Low" ObjectPath="\Events\Music\Stop_Music_Life_Low" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3677840433" Name="Stop_Music_Life_Med" ObjectPath="\Events\Music\Stop_Music_Life_Med" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

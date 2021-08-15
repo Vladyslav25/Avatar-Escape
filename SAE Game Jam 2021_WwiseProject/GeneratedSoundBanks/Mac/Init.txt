@@ -2,7 +2,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	284967655	Ship			\Default Work Unit\Master Audio Bus\Ship	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
 	1229948536	Environment			\Default Work Unit\Master Audio Bus\Environment	
-	1537061107	Wind			\Default Work Unit\Master Audio Bus\Wind	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	2242381963	Enemies			\Default Work Unit\Master Audio Bus\Enemies	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

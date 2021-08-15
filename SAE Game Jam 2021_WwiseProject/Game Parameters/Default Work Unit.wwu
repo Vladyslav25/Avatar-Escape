@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{331DD7F4-424E-4467-883F-FE481C556D4F}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{331DD7F4-424E-4467-883F-FE481C556D4F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{331DD7F4-424E-4467-883F-FE481C556D4F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Hand_Movement" ID="{DA973791-986F-4589-ABF1-A4A25165DA1E}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

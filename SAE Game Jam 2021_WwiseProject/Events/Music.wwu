@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4F96E794-9B5D-4667-B754-CB06A834822E}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Music" ID="{4F96E794-9B5D-4667-B754-CB06A834822E}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Level_Music" ID="{0FC87265-E1C7-48AA-8537-D4F03F52BC8C}">
+					<ChildrenList>
+						<Action Name="" ID="{079285EA-4E3C-4DB2-AFF3-F24D28245318}" ShortID="497878685">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_Music" ID="{8D1F3A0B-C68B-4C71-B8A3-33C6DD0B0A15}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Life_Med" ID="{F907DD50-F389-429A-9E83-A4FAC11FE894}">
+					<ChildrenList>
+						<Action Name="" ID="{1AE82586-C307-4F37-877F-9E9722C81766}" ShortID="656958811">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Life_Med" ID="{24763C58-7F46-4291-A4BE-1C8F93E02D28}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Life_Low" ID="{7758BE04-E679-4F2B-BECF-93996DB3B2F6}">
+					<ChildrenList>
+						<Action Name="" ID="{74A6EAE1-0E60-4B12-9D70-8560D0909F03}" ShortID="391633929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Life_Low" ID="{6DF310D6-B3BE-46B7-8C7A-0E70742B44F5}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Life_Med" ID="{95B5CA7C-FAD8-49FD-B1EB-3C1F6E98ACC3}">
+					<ChildrenList>
+						<Action Name="" ID="{4C7B945E-4DDE-41B8-8C4F-046AC956364E}" ShortID="119934043">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Life_Med" ID="{24763C58-7F46-4291-A4BE-1C8F93E02D28}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Life_Full" ID="{47C9D450-6AFB-460D-86DB-4D89355B43CE}">
+					<ChildrenList>
+						<Action Name="" ID="{6E3FDBC6-D76C-43DE-A38C-5252B4F01DA1}" ShortID="489675320">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Life_Full" ID="{7921619C-D968-4923-8B1E-219B4EB23BF9}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Life_Low" ID="{DAE68E91-82A6-48F4-A8D7-0B18E782271A}">
+					<ChildrenList>
+						<Action Name="" ID="{EDD2782A-0CD7-4EE2-98D1-567C869845F7}" ShortID="660976459">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Life_Low" ID="{6DF310D6-B3BE-46B7-8C7A-0E70742B44F5}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Life_Full" ID="{E7B5B8F6-E497-4E12-A7F6-F72AE0148140}">
+					<ChildrenList>
+						<Action Name="" ID="{40752226-DB74-4376-8820-43F78F03F5FB}" ShortID="41312442">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Life_Full" ID="{7921619C-D968-4923-8B1E-219B4EB23BF9}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -13,12 +13,30 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMBIENCE_WATER = 2546603034U;
+        static const AkUniqueID PLAY_AMBIENCE_WIND = 1913801107U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_JAP = 511960625U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_KISS = 3218283006U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_NORMAL = 1637247213U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_PIG = 4198696536U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_SPAN = 2108511140U;
+        static const AkUniqueID PLAY_ENEMY_GOTHIT = 3822898220U;
+        static const AkUniqueID PLAY_JINGE_WIN = 3838663630U;
+        static const AkUniqueID PLAY_JINGLE_LOSE = 1338643067U;
+        static const AkUniqueID PLAY_LEVEL_MUSIC = 557932600U;
+        static const AkUniqueID PLAY_MUSIC_LIFE_FULL = 2144505736U;
+        static const AkUniqueID PLAY_MUSIC_LIFE_LOW = 800370703U;
+        static const AkUniqueID PLAY_MUSIC_LIFE_MED = 1169331431U;
+        static const AkUniqueID PLAY_WOOD_BREAK = 1136267813U;
+        static const AkUniqueID STOP_MUSIC_LIFE_FULL = 759250546U;
+        static const AkUniqueID STOP_MUSIC_LIFE_LOW = 3241769353U;
+        static const AkUniqueID STOP_MUSIC_LIFE_MED = 3677840433U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID HAND_MOVEMENT = 3744619702U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -35,7 +53,6 @@ namespace AK
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID SHIP = 284967655U;
         static const AkUniqueID UI = 1551306167U;
-        static const AkUniqueID WIND = 1537061107U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
