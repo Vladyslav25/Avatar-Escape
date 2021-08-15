@@ -90,11 +90,9 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 			if (m_counter >= m_creationDelay)
 			{
-<<<<<<< .merge_file_a27004
-				EItem item = (EItem)m_rnd.Next(0, 2);
-=======
+
 				EItem item = (EItem)m_rnd.Next(0, PoolControl.Instance.Prefabs.Length);
->>>>>>> .merge_file_a01936
+
 				Obstacle obst = PoolControl.Instance.GetItem(item);
 				SetRandomPosition(obst.transform);
 				obst.Speed = GetRandomSpeed();
