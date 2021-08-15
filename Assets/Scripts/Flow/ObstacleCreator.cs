@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +30,9 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 	public float RiverEnd => m_riverEnd;
 	public float RiverHalfWidth => (m_instantiateRange + m_riverSideOffset) * .5f;
 
+	[SerializeField]
+	private ScriptableScoreData m_scoreData;
+	
 	[Header("River")]
 	[SerializeField]
 	private float m_riverStart = 20;
@@ -73,6 +75,8 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 		{
 			m_lastPositionThreshold = .5f;
 		}
+
+		m_scoreData.AverageSpeed = Mathf.Lerp(m_minimumSpeed, m_maximumSpeed, .5f);
 	}
 
 	private void Start()
