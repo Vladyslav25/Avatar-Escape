@@ -9,17 +9,6 @@
 			<ChildrenList>
 				<Folder Name="Enemy_Voices" ID="{18826A24-6D3E-435A-9194-491C2643F041}" ShortID="1053891673">
 					<ChildrenList>
-						<Event Name="Play_Enemy_Appears_Jap" ID="{234454F7-5AFE-4DC1-8F32-DA2423F7F887}">
-							<ChildrenList>
-								<Action Name="" ID="{DCA9A591-08ED-4029-9316-0365475D698E}" ShortID="47645538">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Enemy_Appears_Jap" ID="{F213868C-7E39-496E-A7AF-61070313C06C}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Enemy_Appears_Kiss" ID="{84D4F5F8-865E-4039-81BE-13CF73E96D8B}">
 							<ChildrenList>
 								<Action Name="" ID="{B2816ACA-27EE-43AA-B7E2-7C4A48FA1D54}" ShortID="443859326">

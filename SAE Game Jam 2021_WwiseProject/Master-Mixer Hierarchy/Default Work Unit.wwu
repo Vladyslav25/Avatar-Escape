@@ -19,6 +19,11 @@
 						</Bus>
 						<Bus Name="Environment" ID="{CBF4425B-71D2-422E-97D0-67E084917C9A}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-24</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
@@ -40,6 +45,11 @@
 						</Bus>
 						<Bus Name="Music" ID="{2B922A02-9F27-4822-9256-83169C1AD2E6}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="8"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
