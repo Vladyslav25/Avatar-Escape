@@ -10,13 +10,36 @@
 				<ActorMixer Name="Enemies" ID="{DA088168-7DC1-46AD-ACDA-77A2C98EAB5E}" ShortID="861740825">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
 								<Attenuation Name="Attenuation (Custom)" ID="{DD9AD96E-BB30-4029-9539-4F3F21AFF58D}" ShortID="464334511">
 									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="500"/>
+										<Property Name="ConeAttenuation" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeHighPassFilterValue" Type="int32">
+											<ValueList>
+												<Value>27</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeInnerAngle" Type="int32" Value="60"/>
+										<Property Name="ConeLowPassFilterValue" Type="int32">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeOuterAngle" Type="int32" Value="135"/>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="200"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
@@ -32,8 +55,8 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>500</XPos>
-															<YPos>-11.24586</YPos>
+															<XPos>200</XPos>
+															<YPos>-5.79365</YPos>
 															<Flags>37</Flags>
 														</Point>
 													</PointList>
@@ -200,6 +223,21 @@
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Voices" ID="{2B12BDE9-4041-4C4B-BC35-D2A7E45BA6AF}" ShortID="910278509">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
@@ -637,26 +675,66 @@
 												<ActiveSource Name="Whoooh 5" ID="{27222D8A-258F-4E49-BF9A-43D554860762}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Enemy_Appears_Jap" ID="{F213868C-7E39-496E-A7AF-61070313C06C}" ShortID="947764462">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
 										<Sound Name="Anime" ID="{18B816D5-9725-4A1F-ACE5-817185125111}" ShortID="244252736">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{7E346B01-6C84-479F-AF7D-AED6B17C7501}" ShortID="562024573">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="500"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{AA8E8830-4D27-485F-B493-B77D2721C3A4}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>500</XPos>
+																					<YPos>-11.24586</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+													<ObjectRef Name="Enemies" ID="{19CF9E14-3E55-4BFD-B0A3-B3F7C98A0A34}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -679,6 +757,7 @@
 								<RandomSequenceContainer Name="Enemy_Appears_Span" ID="{AD734310-660A-4327-B76A-38F057FD1669}" ShortID="963383003">
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -762,6 +841,10 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Enemy_Appears_Kiss" ID="{894A3CD7-3206-456D-88B9-32318A1C116A}" ShortID="396306683">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
@@ -798,6 +881,9 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Enemy_Appears_Pig" ID="{574E57BF-24F3-4E76-AA25-3A99B8F44B6A}" ShortID="960396230">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
@@ -860,6 +946,9 @@
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{8EC8D5FC-F6B2-4D17-A010-74AFBB39C0D7}"/>
+					</PositioningInfo>
 					<ObjectLists/>
 				</ActorMixer>
 			</ChildrenList>

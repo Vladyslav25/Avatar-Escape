@@ -100,7 +100,8 @@ public class Obstacle : MonoBehaviour
 				m_borderReached = true;
 			}
 			// side check
-			else if (transform.position.x <= -ObstacleCreator.Instance.RiverHalfWidth || transform.position.x >= ObstacleCreator.Instance.RiverHalfWidth)
+			else if (transform.position.x <= -ObstacleCreator.Instance.RiverHalfWidth ||
+				transform.position.x >= ObstacleCreator.Instance.RiverHalfWidth)
 			{
 				StartCoroutine(Fade(FadeSet.Out));
 				m_borderReached = true;

@@ -18,7 +18,6 @@
 						<ObjectRef Name="Stop_Music_Life_Med" ID="{95B5CA7C-FAD8-49FD-B1EB-3C1F6E98ACC3}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Enemy_Appears_Normal" ID="{03A63690-34E9-4A8D-BA2A-90D479E6A911}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Enemy_GotHit" ID="{6A55ED47-FF8E-4CDD-8C18-4D80A212266C}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Enemy_Appears_Jap" ID="{234454F7-5AFE-4DC1-8F32-DA2423F7F887}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Wood_Break" ID="{E4B64652-7E42-4DE7-8638-6829C96E56AF}" WorkUnitID="{15578107-0754-4DC7-AA5F-65A012B049C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_Life_Full" ID="{E7B5B8F6-E497-4E12-A7F6-F72AE0148140}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Water" ID="{325FBA51-A0DE-4E8C-B907-0E80F1C4C978}" WorkUnitID="{015393D1-5444-457C-B004-AD438BC517ED}" Origin="Manual" Filter="7"/>

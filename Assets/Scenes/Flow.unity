@@ -359,7 +359,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643804638}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 800843f3fb4a2c44fac228b84e85707a, type: 3}
   m_Name: 
@@ -445,7 +445,6 @@ GameObject:
   m_Component:
   - component: {fileID: 687995165}
   - component: {fileID: 687995164}
-  - component: {fileID: 687995166}
   m_Layer: 0
   m_Name: PoolControl
   m_TagString: Untagged
@@ -486,21 +485,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &687995166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687995163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3dccaafa82a4632b5ee6a7de09d3201, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_prefabs:
-  - m_item: {fileID: -2692682745914357005, guid: 4d10f4b6b1e99d24c8a2468522f81d65, type: 3}
-    m_poolStartSize: 10
 --- !u!1 &951652750
 GameObject:
   m_ObjectHideFlags: 0

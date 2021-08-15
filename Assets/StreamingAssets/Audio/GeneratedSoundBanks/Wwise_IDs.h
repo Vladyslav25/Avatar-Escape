@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMBIENCE_WATER = 2546603034U;
         static const AkUniqueID PLAY_AMBIENCE_WIND = 1913801107U;
-        static const AkUniqueID PLAY_ENEMY_APPEARS_JAP = 511960625U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_KISS = 3218283006U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_NORMAL = 1637247213U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_PIG = 4198696536U;
