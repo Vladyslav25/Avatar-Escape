@@ -137,7 +137,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 	{
 		if (m_lastPositionValues.Count > 0)
 		{
-			_leave = !m_lastPositionValues.Any(_f => Mathf.Abs( Mathf.Abs(_f) - Mathf.Abs(_value) ) < m_lastPositionThreshold);
+			_leave = !m_lastPositionValues.Any(_f => Mathf.Abs( _f - _value) < m_lastPositionThreshold);
 			
 			if (m_lastPositionValues.Count >= m_maxLastPositions)
 			{
