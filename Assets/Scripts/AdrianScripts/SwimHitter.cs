@@ -43,6 +43,9 @@ public class SwimHitter : MonoBehaviour, IHitable
     private float m_pingPongMinMaxValue;
 
     private float m_randomTimeAdder = 0;
+    
+    [SerializeField]
+    private AK.Wwise.Event barrellCollisionEvent;
 
     private void Awake()
     {
@@ -113,6 +116,8 @@ public class SwimHitter : MonoBehaviour, IHitable
             rb.transform.parent = null;
             rb.AddExplosionForce(bulletStrength * m_ExplosionMultiplier, hitPosition, 10.0f);
         }
+
+        barrellCollisionEvent.Post(this.gameObject);
     }
 
     private void BrakeObjectCompletly(Vector3 hitPosition, float bulletStrength)
@@ -132,5 +137,7 @@ public class SwimHitter : MonoBehaviour, IHitable
 
         this.gameObject.SetActive(false);
         m_currentDamage = 0.0f;
+
+        barrellCollisionEvent.Post(this.gameObject);
     }
 }
