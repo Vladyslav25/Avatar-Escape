@@ -13,6 +13,7 @@ public class EnemyCollision : MonoBehaviour
     {
         if(collision.gameObject.tag == "Boat")
         {
+            Debug.Log("Test");
             rb.velocity = Vector3.zero;
             rb.constraints = RigidbodyConstraints.None;
             boatCollisionEvent.Post(gameObject);

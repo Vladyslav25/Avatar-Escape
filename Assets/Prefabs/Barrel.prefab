@@ -960,6 +960,10 @@ MonoBehaviour:
   m_ExplosionMultiplier: 100
   m_IsAHealingObject: 0
   m_pingPongMinMaxValue: 0.2
+  barrellCollisionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 218665a7dd8a2b04e95ea63b235f7384, type: 2}
 --- !u!114 &2080962186605696823
 MonoBehaviour:
   m_ObjectHideFlags: 0
