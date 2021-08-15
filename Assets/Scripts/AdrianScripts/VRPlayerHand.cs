@@ -168,9 +168,6 @@ public class VRPlayerHand : MonoBehaviour
 
     private void ShootAirBall()
     {
-        Debug.Log($"Shooting with total area: {m_totalArea}");
-        //End
-
         Rigidbody bulletRB = m_CurrentAirBullet.GetComponent<Rigidbody>();
         Vector3 speed = m_Hand.GetVelocity();
         Vector3 forward = speed.normalized;
