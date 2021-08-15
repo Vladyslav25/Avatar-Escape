@@ -95,7 +95,7 @@ MonoBehaviour:
   boatCollisionEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9a8e45ba3364a463984044cb95d116a9, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1d3ade29190d04caeb90d5bd2ecc5377, type: 2}
   airCollisionEvent:
     idInternal: 0
     valueGuidInternal: 
