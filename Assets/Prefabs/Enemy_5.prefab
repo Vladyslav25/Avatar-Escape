@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3381995616722303823}
   - component: {fileID: -4171405947320232042}
   - component: {fileID: 4472777667245646044}
-  - component: {fileID: -5560277960645162999}
   m_Layer: 0
   m_Name: Enemy_5
   m_TagString: Untagged
@@ -68,19 +67,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9a8e45ba3364a463984044cb95d116a9, type: 2}
---- !u!65 &-5560277960645162999
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2712455280579928565}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9386509, y: 1.6138159, z: 0.4316588}
-  m_Center: {x: -0.15819243, y: 0.8271238, z: 0.19749084}
 --- !u!1 &3969184770421490142
 GameObject:
   m_ObjectHideFlags: 0
