@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 4576307300482205073}
   - component: {fileID: 2226266807410187100}
   - component: {fileID: 5924919019868479702}
-  - component: {fileID: -2359196495727067322}
   m_Layer: 0
   m_Name: Enemy_3
   m_TagString: Untagged
@@ -150,19 +149,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9a8e45ba3364a463984044cb95d116a9, type: 2}
---- !u!65 &-2359196495727067322
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3803746813177274155}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9386509, y: 1.6138159, z: 0.4316588}
-  m_Center: {x: -0.15819243, y: 0.8271238, z: 0.19749084}
 --- !u!1 &7399401558166502094
 GameObject:
   m_ObjectHideFlags: 0

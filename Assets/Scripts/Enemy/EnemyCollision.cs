@@ -6,7 +6,8 @@ public class EnemyCollision : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody rb;
-    public AK.Wwise.Event enemyCollisionEvent;
+    public AK.Wwise.Event boatCollisionEvent;
+    public AK.Wwise.Event airCollisionEvent;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,7 +15,11 @@ public class EnemyCollision : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
             rb.constraints = RigidbodyConstraints.None;
-            enemyCollisionEvent.Post(gameObject);
+            boatCollisionEvent.Post(gameObject);
+        }
+        if(collision.gameObject.tag == "Airball")
+        {
+            airCollisionEvent.Post(gameObject);
         }
     }
 }
