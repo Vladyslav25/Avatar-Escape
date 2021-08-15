@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/luke/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/SAE/SAE Game Jam 2021/SAE Game Jam 2021_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/luke/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/SAE/SAE Game Jam 2021/SAE Game Jam 2021_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/luke/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/SAE/SAE Game Jam 2021/SAE Game Jam 2021_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/luke/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/SAE/SAE Game Jam 2021/SAE Game Jam 2021_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="267313339">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3474499867">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="511960625" Name="Play_Enemy_Appears_Jap" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Jap" DurationType="OneShot" DurationMin="4.629333" DurationMax="4.629333">
+					<IncludedMemoryFiles>
+						<File Id="848202817" Language="SFX">
+							<ShortName>Anime.wav</ShortName>
+							<Path>SFX/Anime_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3218283006" Name="Play_Enemy_Appears_Kiss" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Kiss" DurationType="OneShot" DurationMin="2.805333" DurationMax="2.805333">
+					<IncludedMemoryFiles>
+						<File Id="1052907634" Language="SFX">
+							<ShortName>Kiss 1.wav</ShortName>
+							<Path>SFX/Kiss 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1637247213" Name="Play_Enemy_Appears_Normal" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Normal" DurationType="OneShot" DurationMin="1.429333" DurationMax="5.685333">
+					<IncludedMemoryFiles>
+						<File Id="6156648" Language="SFX">
+							<ShortName>Assvatar.wav</ShortName>
+							<Path>SFX/Assvatar_10C4C929.wem</Path>
+						</File>
+						<File Id="172447157" Language="SFX">
+							<ShortName>Whoooh 1.1.wav</ShortName>
+							<Path>SFX/Whoooh 1.1_10C4C929.wem</Path>
+						</File>
+						<File Id="194663323" Language="SFX">
+							<ShortName>Im gonna get you.wav</ShortName>
+							<Path>SFX/Im gonna get you_10C4C929.wem</Path>
+						</File>
+						<File Id="222172071" Language="SFX">
+							<ShortName>Charmeur 1.wav</ShortName>
+							<Path>SFX/Charmeur 1_10C4C929.wem</Path>
+						</File>
+						<File Id="355539363" Language="SFX">
+							<ShortName>Arrrrrrrrr.wav</ShortName>
+							<Path>SFX/Arrrrrrrrr_10C4C929.wem</Path>
+						</File>
+						<File Id="419682470" Language="SFX">
+							<ShortName>Hi Laugh.wav</ShortName>
+							<Path>SFX/Hi Laugh_10C4C929.wem</Path>
+						</File>
+						<File Id="481353556" Language="SFX">
+							<ShortName>Charmeur 2.wav</ShortName>
+							<Path>SFX/Charmeur 2_10C4C929.wem</Path>
+						</File>
+						<File Id="596498803" Language="SFX">
+							<ShortName>You cant see.wav</ShortName>
+							<Path>SFX/You cant see_10C4C929.wem</Path>
+						</File>
+						<File Id="807975672" Language="SFX">
+							<ShortName>Dark Laugh.wav</ShortName>
+							<Path>SFX/Dark Laugh_10C4C929.wem</Path>
+						</File>
+						<File Id="915139061" Language="SFX">
+							<ShortName>Im gonna get you dark.wav</ShortName>
+							<Path>SFX/Im gonna get you dark_10C4C929.wem</Path>
+						</File>
+						<File Id="986073854" Language="SFX">
+							<ShortName>I dont evem like you that much.wav</ShortName>
+							<Path>SFX/I dont evem like you that much_10C4C929.wem</Path>
+						</File>
+						<File Id="1036676916" Language="SFX">
+							<ShortName>Blow me.wav</ShortName>
+							<Path>SFX/Blow me_10C4C929.wem</Path>
+						</File>
+						<File Id="1060158173" Language="SFX">
+							<ShortName>Charmeur 3.wav</ShortName>
+							<Path>SFX/Charmeur 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4198696536" Name="Play_Enemy_Appears_Pig" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Pig" DurationType="OneShot" DurationMin="3.840000" DurationMax="4.992000">
+					<IncludedMemoryFiles>
+						<File Id="171600350" Language="SFX">
+							<ShortName>Pig 1.wav</ShortName>
+							<Path>SFX/Pig 1_10C4C929.wem</Path>
+						</File>
+						<File Id="499196686" Language="SFX">
+							<ShortName>Pig 2.wav</ShortName>
+							<Path>SFX/Pig 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2108511140" Name="Play_Enemy_Appears_Span" ObjectPath="\Events\Default Work Unit\Enemies\Play_Enemy_Appears_Span" DurationType="OneShot" DurationMin="3.082667" DurationMax="3.957333">
+					<IncludedMemoryFiles>
+						<File Id="34855469" Language="SFX">
+							<ShortName>Spanisch 1.wav</ShortName>
+							<Path>SFX/Spanisch 1_10C4C929.wem</Path>
+						</File>
+						<File Id="544270357" Language="SFX">
+							<ShortName>Spanisch 3.wav</ShortName>
+							<Path>SFX/Spanisch 3_10C4C929.wem</Path>
+						</File>
+						<File Id="997060268" Language="SFX">
+							<ShortName>Spanisch 1.1.wav</ShortName>
+							<Path>SFX/Spanisch 1.1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
