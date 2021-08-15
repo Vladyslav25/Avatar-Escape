@@ -10,12 +10,12 @@ public class RiverSide : MonoBehaviour
     
 
     private float m_riverEnd;
-    public void Init(float _riverEnd, bool _startLater = false)
+    public void Init(float _riverEnd, int _startLater = 0)
     {
         m_riverEnd = _riverEnd;
-        if (_startLater)
+        if (_startLater >= 0)
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + m_riverEnd * -2);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 80 * _startLater);
         }
     }
 
