@@ -11,6 +11,11 @@ namespace N_Enum
     {
         RiverSide
     }
+
+    public enum EFlora
+    {
+        Grass
+    }
     
     public enum FadeSet
     {

@@ -164,7 +164,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 		return Mathf.Lerp(m_minimumSpeed, m_maximumSpeed, t);
 	}
 
-	private Vector3 GetRandomRotation()
+	public Vector3 GetRandomRotation()
 	{
 		float t = (float)m_rnd.NextDouble();
 		return Vector3.Lerp(m_minimumRotation, m_maximumRotation, t);
