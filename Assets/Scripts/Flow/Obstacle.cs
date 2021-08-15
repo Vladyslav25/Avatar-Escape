@@ -29,7 +29,7 @@ public class Obstacle : MonoBehaviour
 
 	public void SetVelocity()
 	{
-		m_rb.velocity = -transform.forward * m_speed;
+		m_rb.velocity = -Vector3.forward * m_speed;
 	}
 
 	private void BorderCheck()
