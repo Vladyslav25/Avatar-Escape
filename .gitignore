@@ -101,4 +101,5 @@ WwiseUnityIntegration_*_Src.zip
 Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h.meta
 
 GeneratedSoundBanks
+*.bnk
 
