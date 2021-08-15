@@ -5,7 +5,11 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{30944775-631C-4EB6-BCD7-5633F072D535}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Kampfschrei" ID="{D7D42DB0-0C47-4BF7-A5FB-750F649A5585}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Enemy_Appears_Kiss" ID="{84D4F5F8-865E-4039-81BE-13CF73E96D8B}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Enemy_Appears_Span" ID="{8E87BE81-DFBB-4337-9A0C-1DA3713CA1DA}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Enemy_Appears_Pig" ID="{578F4FD2-FD06-4899-86FF-90320BAF732F}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Enemy_Appears_Normal" ID="{03A63690-34E9-4A8D-BA2A-90D479E6A911}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Enemy_Appears_Jap" ID="{234454F7-5AFE-4DC1-8F32-DA2423F7F887}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

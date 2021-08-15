@@ -7,12 +7,56 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Play_Kampfschrei" ID="{D7D42DB0-0C47-4BF7-A5FB-750F649A5585}">
+				<Event Name="Play_Enemy_Appears_Kiss" ID="{84D4F5F8-865E-4039-81BE-13CF73E96D8B}">
 					<ChildrenList>
-						<Action Name="" ID="{976AC30A-1AA0-44F0-B96C-C3D296184F23}" ShortID="212557812">
+						<Action Name="" ID="{B2816ACA-27EE-43AA-B7E2-7C4A48FA1D54}" ShortID="443859326">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Kampfschrei" ID="{E9D58954-966A-4F14-A27E-C8F6D52D75B8}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
+									<ObjectRef Name="Enemy_Appears_Kiss" ID="{894A3CD7-3206-456D-88B9-32318A1C116A}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Enemy_Appears_Span" ID="{8E87BE81-DFBB-4337-9A0C-1DA3713CA1DA}">
+					<ChildrenList>
+						<Action Name="" ID="{570EA5A9-A14F-4DA2-8C18-CFFAC9D4755E}" ShortID="709982947">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Appears_Span" ID="{AD734310-660A-4327-B76A-38F057FD1669}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Enemy_Appears_Jap" ID="{234454F7-5AFE-4DC1-8F32-DA2423F7F887}">
+					<ChildrenList>
+						<Action Name="" ID="{DCA9A591-08ED-4029-9316-0365475D698E}" ShortID="47645538">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Appears_Jap" ID="{F213868C-7E39-496E-A7AF-61070313C06C}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Enemy_Appears_Normal" ID="{03A63690-34E9-4A8D-BA2A-90D479E6A911}">
+					<ChildrenList>
+						<Action Name="" ID="{3208A886-C51B-4D4B-A834-F8E74345B816}" ShortID="942034365">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Appears_Normal" ID="{87F0A1FC-1893-44B2-8595-057E13F6E148}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Enemy_Appears_Pig" ID="{578F4FD2-FD06-4899-86FF-90320BAF732F}">
+					<ChildrenList>
+						<Action Name="" ID="{38859D82-E714-47B2-8AA2-99DC62750394}" ShortID="347796030">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Appears_Pig" ID="{574E57BF-24F3-4E76-AA25-3A99B8F44B6A}" WorkUnitID="{262C8D57-6D61-42BD-BE15-570A22BA9DAE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
