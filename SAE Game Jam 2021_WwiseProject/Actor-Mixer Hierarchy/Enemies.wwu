@@ -10,13 +10,36 @@
 				<ActorMixer Name="Enemies" ID="{DA088168-7DC1-46AD-ACDA-77A2C98EAB5E}" ShortID="861740825">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
 								<Attenuation Name="Attenuation (Custom)" ID="{DD9AD96E-BB30-4029-9539-4F3F21AFF58D}" ShortID="464334511">
 									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="500"/>
+										<Property Name="ConeAttenuation" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeHighPassFilterValue" Type="int32">
+											<ValueList>
+												<Value>27</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeInnerAngle" Type="int32" Value="60"/>
+										<Property Name="ConeLowPassFilterValue" Type="int32">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeOuterAngle" Type="int32" Value="135"/>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="200"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
@@ -32,8 +55,8 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>500</XPos>
-															<YPos>-11.24586</YPos>
+															<XPos>200</XPos>
+															<YPos>-5.79365</YPos>
 															<Flags>37</Flags>
 														</Point>
 													</PointList>
@@ -923,6 +946,9 @@
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{8EC8D5FC-F6B2-4D17-A010-74AFBB39C0D7}"/>
+					</PositioningInfo>
 					<ObjectLists/>
 				</ActorMixer>
 			</ChildrenList>
