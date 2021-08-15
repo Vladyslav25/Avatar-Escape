@@ -6,5 +6,11 @@ namespace N_Enum
         Box = 1,
         Plank = 2
     }
+    
+    public enum FadeSet
+    {
+        In,
+        Out
+    }
 }
 
