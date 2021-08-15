@@ -94,12 +94,16 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 			if (m_counter >= m_creationDelay)
 			{
-				EItem item = (EItem)m_rnd.Next(0, PoolControl.Instance.Prefabs.Length);
-				Obstacle obst = PoolControl.Instance.GetItem(item);
+				EItem item = (EItem)m_rnd.Next(0, ItemPool.Instance.Prefabs.Length);
+				Obstacle obst = ItemPool.Instance.GetItem(item);
 				SetRandomPosition(obst.transform);
 				obst.BorderReached = false;
 				obst.Speed = GetRandomSpeed();
-				obst.transform.localEulerAngles = GetRandomRotation();
+				
+				Vector3 rot = GetRandomRotation();
+				obst.transform.localEulerAngles = rot;
+				obst.StartRotation = rot;
+				
 				obst.SetVelocity();
 
 				ObstaclesInMotion++;

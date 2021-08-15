@@ -7,6 +7,11 @@ namespace N_Enum
         Plank = 2
     }
     
+    public enum ELevelGeo
+    {
+        RiverSide
+    }
+    
     public enum FadeSet
     {
         In,
