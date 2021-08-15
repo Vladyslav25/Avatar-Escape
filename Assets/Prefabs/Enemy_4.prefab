@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7574434240681017139}
-  - component: {fileID: 3709425551291245237}
   - component: {fileID: 2272197708629769773}
   - component: {fileID: 8355818071305024057}
   m_Layer: 0
@@ -35,19 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3709425551291245237
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7085881175879230857}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9386509, y: 1.6138159, z: 0.4316588}
-  m_Center: {x: -0.15819243, y: 0.8271238, z: 0.19749084}
 --- !u!114 &2272197708629769773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +47,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8355818071305024057}
+  boatCollisionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b43080159c4544765be7b93cce0abd78, type: 2}
+  airCollisionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bdee0efdd32a044d9acc7bf9e323bdc7, type: 2}
 --- !u!54 &8355818071305024057
 Rigidbody:
   m_ObjectHideFlags: 0

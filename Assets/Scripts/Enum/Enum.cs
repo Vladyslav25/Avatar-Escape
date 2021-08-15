@@ -6,5 +6,16 @@ namespace N_Enum
         Box = 1,
         Plank = 2
     }
+    
+    public enum ELevelGeo
+    {
+        RiverSide
+    }
+    
+    public enum FadeSet
+    {
+        In,
+        Out
+    }
 }
 

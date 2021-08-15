@@ -33,6 +33,24 @@ namespace AK
         static const AkUniqueID STOP_MUSIC_LIFE_MED = 3677840433U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace PLAYER_LIFE
+        {
+            static const AkUniqueID GROUP = 3762137787U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LOW_LIFE = 2791626534U;
+                static const AkUniqueID MAX_LIFE = 1497871086U;
+                static const AkUniqueID MID_LIFE = 2694672098U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ZERO_LIFES = 894548483U;
+            } // namespace STATE
+        } // namespace PLAYER_LIFE
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID HAND_MOVEMENT = 3744619702U;

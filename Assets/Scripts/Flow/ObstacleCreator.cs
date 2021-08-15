@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +30,9 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 	public float RiverEnd => m_riverEnd;
 	public float RiverHalfWidth => (m_instantiateRange + m_riverSideOffset) * .5f;
 
+	[SerializeField]
+	private ScriptableScoreData m_scoreData;
+	
 	[Header("River")]
 	[SerializeField]
 	private float m_riverStart = 20;
@@ -73,6 +75,8 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 		{
 			m_lastPositionThreshold = .5f;
 		}
+
+		m_scoreData.AverageSpeed = Mathf.Lerp(m_minimumSpeed, m_maximumSpeed, .5f);
 	}
 
 	private void Start()
@@ -90,13 +94,16 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 			if (m_counter >= m_creationDelay)
 			{
-
-				EItem item = (EItem)m_rnd.Next(0, PoolControl.Instance.Prefabs.Length);
-
-				Obstacle obst = PoolControl.Instance.GetItem(item);
+				EItem item = (EItem)m_rnd.Next(0, ItemPool.Instance.Prefabs.Length);
+				Obstacle obst = ItemPool.Instance.GetItem(item);
 				SetRandomPosition(obst.transform);
+				obst.BorderReached = false;
 				obst.Speed = GetRandomSpeed();
-				obst.transform.localEulerAngles = GetRandomRotation();
+				
+				Vector3 rot = GetRandomRotation();
+				obst.transform.localEulerAngles = rot;
+				obst.StartRotation = rot;
+				
 				obst.SetVelocity();
 
 				ObstaclesInMotion++;
@@ -115,8 +122,7 @@ public class ObstacleCreator : GenericSingleton<ObstacleCreator>
 
 		while (true)
 		{
-			t = (float)m_rnd.NextDouble();
-			t = LastPositionCheck(t, out bool leave);
+			t = LastPositionCheck((float)m_rnd.NextDouble(), out bool leave);
 
 			if (leave)
 				break;

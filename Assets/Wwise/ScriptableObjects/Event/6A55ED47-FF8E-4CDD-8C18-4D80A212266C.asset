@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321f717bbbabe4f4aaf9d9e44f0edf10, type: 3}
+  m_Name: 6A55ED47-FF8E-4CDD-8C18-4D80A212266C
+  m_EditorClassIdentifier: 
+  objectName: Play_Enemy_GotHit
+  id: 3822898220
+  guid: 6A55ED47-FF8E-4CDD-8C18-4D80A212266C

@@ -9,8 +9,10 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Level_Music" ID="{8D1F3A0B-C68B-4C71-B8A3-33C6DD0B0A15}" ShortID="754380807">
 					<PropertyList>
-						<Property Name="GridOffsetPreset" Type="int16" Value="53"/>
+						<Property Name="GridFrequencyPreset" Type="int16" Value="54"/>
+						<Property Name="GridOffsetPreset" Type="int16" Value="54"/>
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="Tempo" Type="Real64" Value="132"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -21,10 +23,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="Player_Life_Full" ID="{457C3947-8170-4218-9D9F-CA19CC52CE3E}" ShortID="555102752">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="59076.9166666667"/>
-							</PropertyList>
+						<MusicPlaylistContainer Name="MedLife" ID="{AA4CF516-288A-41CC-AA21-892C0B8717C2}" ShortID="440493851">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
@@ -34,81 +33,147 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{F870870C-FC41-4515-A24D-41123FFE6302}" ShortID="390435114">
+								<MusicSegment Name="Player_Life_Med" ID="{0C2598C8-DC69-4FF9-841F-B85F695F3EA1}" ShortID="1058610395">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="59076.9166666667"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{91122079-D836-46C6-957C-6AAD7330E47D}">
-											<Language>SFX</Language>
-											<AudioFile>Game Jam_Avatar Escape_Soundtrack [3 Lives].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="607131726"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<MusicTrack Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{D009B2CE-4B4C-458E-8F1D-513B3DBA51C6}" ShortID="179785727">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{ED57ABAE-1316-40E8-8900-50C4E07D5E9D}">
+													<Language>SFX</Language>
+													<AudioFile>Game Jam_Avatar Escape_Soundtrack [2 Lives].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="70758558"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7831AC44-7603-494B-B80B-D22C65AD85AD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9FDB77AF-7D7D-4334-96A6-EA7BEB57C599}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{B1268E4C-4059-4B1F-A245-1BE6AA476C78}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="59076.9166666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{ED57ABAE-1316-40E8-8900-50C4E07D5E9D}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{2E7C9478-8EC6-42BB-A75B-D359B7C28C79}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
-										<ObjectList Name="Sequences">
+										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{D596CB1D-49DA-4AD4-BE86-8ABC1FE4F654}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{467D1D6F-A53F-46CF-BA1C-1185B1CFC92A}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="59076.9166666667"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{91122079-D836-46C6-957C-6AAD7330E47D}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+													<MusicCue Name="Entry Cue" ID="{48597184-9166-451B-94F6-F17F362C35CF}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{824A7B02-1A38-4E41-A890-110AF4A5479A}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-								</MusicTrack>
+								</MusicSegment>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{1B651592-81D8-47B5-BCE2-7BE3817665A4}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{EEF032B0-2D89-4B52-8ECE-9E04F8F55B49}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="1000"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
-						<MusicSegment Name="Player_Life_Med" ID="{5C575E86-7443-4E52-AFBE-D5AFA31022BE}" ShortID="584028064">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="59076.9166666667"/>
-							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Life" ID="{FB700991-4EE6-4C5C-BE31-1A98B532CFB1}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low_Life" ID="{7EC2F8CC-4D11-4259-AE5D-6D6189F713C0}"/>
+										<CustomState Name="" ID="{342BAB77-40FC-4E29-A185-27EEC17B1559}" ShortID="752340812"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Mid_Life" ID="{CEA8636A-DD32-4774-9EF5-EC61508FA08B}"/>
+										<CustomState Name="" ID="{0D632FF2-F147-4447-992D-D7091E964409}" ShortID="73112053"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Zero_Lifes" ID="{3B411CA1-BE5C-4A3E-B4D5-507CE4CFBFA2}"/>
+										<CustomState Name="" ID="{F5D1FAA7-E70E-4732-8113-74A2D29B954A}" ShortID="877847927"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Max_Life" ID="{C45B7266-4904-4E4F-A9E0-DA6D0A2B9220}"/>
+										<CustomState Name="" ID="{4A7CBAC0-BA23-4CBC-9F6A-40BFD9444FBE}" ShortID="295606694"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{77D36371-0D82-42E1-8D53-E111D594CE4F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{18C3C48C-34B9-4E68-9523-1AF6BCF91229}">
+											<ReferenceList/>
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{D9288805-314B-4026-9C6F-E6818EB70802}" ShortID="681795638">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{44E65329-DBE7-4015-B71D-8CB9435BAC45}" ShortID="210063966">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Player_Life_Med" ID="{0C2598C8-DC69-4FF9-841F-B85F695F3EA1}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="LowLife" ID="{B9CA930E-1E26-4EAE-91D8-72C04D9E11E8}" ShortID="178406365">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
@@ -118,81 +183,147 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{55CFCB7C-3730-4D2D-AEFA-DDF4F00F45BF}" ShortID="790474541">
+								<MusicSegment Name="Player_Life_Low" ID="{5C575E86-7443-4E52-AFBE-D5AFA31022BE}" ShortID="584028064">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="59076.9166666667"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{A5EC6239-1D9C-4FCB-BBE0-895DB107C630}">
-											<Language>SFX</Language>
-											<AudioFile>Game Jam_Avatar Escape_Soundtrack [ 1 Live].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1876761"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<MusicTrack Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{55CFCB7C-3730-4D2D-AEFA-DDF4F00F45BF}" ShortID="790474541">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{A5EC6239-1D9C-4FCB-BBE0-895DB107C630}">
+													<Language>SFX</Language>
+													<AudioFile>Game Jam_Avatar Escape_Soundtrack [ 1 Live].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1876761"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5D6D3AEE-F021-4183-99F1-C8A061332B9C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{04137CE7-144D-4E1B-AB2D-CF50FCBD5C45}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{60932EE6-A59D-4049-B3E6-A771926FD070}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="59076.9166666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{A5EC6239-1D9C-4FCB-BBE0-895DB107C630}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{5D6D3AEE-F021-4183-99F1-C8A061332B9C}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
-										<ObjectList Name="Sequences">
+										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{04137CE7-144D-4E1B-AB2D-CF50FCBD5C45}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{60932EE6-A59D-4049-B3E6-A771926FD070}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="59076.9166666667"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Game Jam_Avatar Escape_Soundtrack [ 1 Live]" ID="{A5EC6239-1D9C-4FCB-BBE0-895DB107C630}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+													<MusicCue Name="Entry Cue" ID="{3032AF52-D913-4F0D-BA9A-6CF000AD31CE}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{310F7F91-A708-4E73-88D9-CCD5A101A1DF}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="500"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-								</MusicTrack>
+								</MusicSegment>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{3032AF52-D913-4F0D-BA9A-6CF000AD31CE}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{310F7F91-A708-4E73-88D9-CCD5A101A1DF}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="1000"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
-						<MusicSegment Name="Player_Life_Low" ID="{0C2598C8-DC69-4FF9-841F-B85F695F3EA1}" ShortID="1058610395">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="59076.9166666667"/>
-							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Life" ID="{FB700991-4EE6-4C5C-BE31-1A98B532CFB1}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low_Life" ID="{7EC2F8CC-4D11-4259-AE5D-6D6189F713C0}"/>
+										<CustomState Name="" ID="{1FD2A4EB-C161-4198-9882-550AEFE9D031}" ShortID="303218687"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Mid_Life" ID="{CEA8636A-DD32-4774-9EF5-EC61508FA08B}"/>
+										<CustomState Name="" ID="{3DA5FD71-E8AC-48AA-98CA-708BF0531A89}" ShortID="390568657"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Zero_Lifes" ID="{3B411CA1-BE5C-4A3E-B4D5-507CE4CFBFA2}"/>
+										<CustomState Name="" ID="{7E3AEAE6-F7A9-492E-B00C-EF15DBF2C388}" ShortID="825724684"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Max_Life" ID="{C45B7266-4904-4E4F-A9E0-DA6D0A2B9220}"/>
+										<CustomState Name="" ID="{51AE1395-27FC-4045-9E21-928E594E84B4}" ShortID="973834582"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{8CCC8D81-BA1B-455C-B112-B723E616750E}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{6B6E184D-4324-4E1C-AE70-46C043AA1C89}">
+											<ReferenceList/>
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{D1521872-25AD-4332-82B0-5015A2EB59C1}" ShortID="1024389663">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{169BF257-1177-420B-BCDB-66BD3579F7BF}" ShortID="938209763">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Player_Life_Low" ID="{5C575E86-7443-4E52-AFBE-D5AFA31022BE}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="MaxLife" ID="{F9F5050D-B6B7-4AFC-8B5A-D842334E4CAE}" ShortID="573852837">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
@@ -202,122 +333,240 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{D009B2CE-4B4C-458E-8F1D-513B3DBA51C6}" ShortID="179785727">
+								<MusicSegment Name="Player_Life_Full" ID="{457C3947-8170-4218-9D9F-CA19CC52CE3E}" ShortID="555102752">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="59076.9166666667"/>
+										<Property Name="GridOffsetPreset" Type="int16" Value="53"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+											<ObjectRef Name="Music" ID="{2B922A02-9F27-4822-9256-83169C1AD2E6}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{ED57ABAE-1316-40E8-8900-50C4E07D5E9D}">
-											<Language>SFX</Language>
-											<AudioFile>Game Jam_Avatar Escape_Soundtrack [2 Lives].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="70758558"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<MusicTrack Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{F870870C-FC41-4515-A24D-41123FFE6302}" ShortID="390435114">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{91122079-D836-46C6-957C-6AAD7330E47D}">
+													<Language>SFX</Language>
+													<AudioFile>Game Jam_Avatar Escape_Soundtrack [3 Lives].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="607131726"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{2E7C9478-8EC6-42BB-A75B-D359B7C28C79}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D596CB1D-49DA-4AD4-BE86-8ABC1FE4F654}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{467D1D6F-A53F-46CF-BA1C-1185B1CFC92A}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="59076.9166666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Game Jam_Avatar Escape_Soundtrack [3 Lives]" ID="{91122079-D836-46C6-957C-6AAD7330E47D}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{7831AC44-7603-494B-B80B-D22C65AD85AD}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
-										<ObjectList Name="Sequences">
+										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{9FDB77AF-7D7D-4334-96A6-EA7BEB57C599}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{B1268E4C-4059-4B1F-A245-1BE6AA476C78}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="59076.9166666667"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Game Jam_Avatar Escape_Soundtrack [2 Lives]" ID="{ED57ABAE-1316-40E8-8900-50C4E07D5E9D}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+													<MusicCue Name="Entry Cue" ID="{1B651592-81D8-47B5-BCE2-7BE3817665A4}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{EEF032B0-2D89-4B52-8ECE-9E04F8F55B49}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-								</MusicTrack>
+								</MusicSegment>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{48597184-9166-451B-94F6-F17F362C35CF}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{824A7B02-1A38-4E41-A890-110AF4A5479A}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="1000"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Life" ID="{FB700991-4EE6-4C5C-BE31-1A98B532CFB1}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low_Life" ID="{7EC2F8CC-4D11-4259-AE5D-6D6189F713C0}"/>
+										<CustomState Name="" ID="{E0D79492-CC27-49E2-9CB9-A0CD431A9E16}" ShortID="1031538935"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Mid_Life" ID="{CEA8636A-DD32-4774-9EF5-EC61508FA08B}"/>
+										<CustomState Name="" ID="{684567EA-B02C-45FE-9E52-A673331DB7A8}" ShortID="878320817"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Zero_Lifes" ID="{3B411CA1-BE5C-4A3E-B4D5-507CE4CFBFA2}"/>
+										<CustomState Name="" ID="{92292682-A959-4BB3-A50A-120A2DDE66A1}" ShortID="340137347"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Max_Life" ID="{C45B7266-4904-4E4F-A9E0-DA6D0A2B9220}"/>
+										<CustomState Name="" ID="{358D1919-B34F-4951-A02E-B28B6B569E6A}" ShortID="321194933"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{8E970F12-608F-47EA-9C10-7E89CFDAF41A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{C229D710-73EB-4EF9-BB46-0002BEAB9D24}">
+											<ReferenceList/>
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{89466488-CCC5-44F7-A4EE-7CFACBBC582F}" ShortID="486787702">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{CAE1604F-2065-4D7A-946F-6B17A7669C95}" ShortID="329672050">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Player_Life_Full" ID="{457C3947-8170-4218-9D9F-CA19CC52CE3E}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Player_Life" ID="{FB700991-4EE6-4C5C-BE31-1A98B532CFB1}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Low_Life" ID="{7EC2F8CC-4D11-4259-AE5D-6D6189F713C0}"/>
+								<CustomState Name="" ID="{800AC918-57A8-4474-8D5E-E1A9F10B682C}" ShortID="807296491"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Mid_Life" ID="{CEA8636A-DD32-4774-9EF5-EC61508FA08B}"/>
+								<CustomState Name="" ID="{88B5D55F-E649-4F9E-8A29-281F1AF0AEBD}" ShortID="711329276"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Zero_Lifes" ID="{3B411CA1-BE5C-4A3E-B4D5-507CE4CFBFA2}"/>
+								<CustomState Name="" ID="{E4225F89-6591-4368-91FA-16A9AE0A525E}" ShortID="383427631"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Max_Life" ID="{C45B7266-4904-4E4F-A9E0-DA6D0A2B9220}"/>
+								<CustomState Name="" ID="{4B6DFE0D-8AA1-4DF3-BB22-E36FE2B5764F}" ShortID="590454169"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{76DAE9B1-9474-481C-B9B4-8CB47A79D27A}">
 							<PropertyList>
 								<Property Name="IsFolder" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<MusicTransition Name="Transition" ID="{6C68FCBE-653E-4D34-862F-B93886FFF425}">
-									<TransitionInfo/>
+									<PropertyList>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="3"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F5407720-07D5-4CA2-BC69-6194F0C87163}">
+												<PropertyList>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
 					<ObjectLists/>
+					<ArgumentList>
+						<ArgumentRef Name="Player_Life" ID="{FB700991-4EE6-4C5C-BE31-1A98B532CFB1}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Player_Life" ID="{FB700991-4EE6-4C5C-BE31-1A98B532CFB1}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="MedLife" ID="{AA4CF516-288A-41CC-AA21-892C0B8717C2}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Mid_Life" ID="{CEA8636A-DD32-4774-9EF5-EC61508FA08B}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="MedLife" ID="{AA4CF516-288A-41CC-AA21-892C0B8717C2}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Max_Life" ID="{C45B7266-4904-4E4F-A9E0-DA6D0A2B9220}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="MaxLife" ID="{F9F5050D-B6B7-4AFC-8B5A-D842334E4CAE}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Low_Life" ID="{7EC2F8CC-4D11-4259-AE5D-6D6189F713C0}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="LowLife" ID="{B9CA930E-1E26-4EAE-91D8-72C04D9E11E8}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
 				</MusicSwitchContainer>
-				<MusicSegment Name="Music_Menu" ID="{1026320C-5C52-4F99-A5AC-CAD6FD41039B}" ShortID="415102844">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A9F8674-2C4C-4BC6-9DE2-54792F64FEEB}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6ACF07B-6CB9-4488-8681-C3B7434C72DA}"/>
-						</Reference>
-					</ReferenceList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{413DACF9-D40C-4410-9ABE-C25C5EA12005}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{891C2234-BC53-49B5-A3BF-2B3FB3EC9E40}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="1000"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
