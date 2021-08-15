@@ -225,4 +225,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_chragedPower: 0.1
+  m_isActiveCharging: 0
   m_effect: {fileID: 1304248382987252381}
