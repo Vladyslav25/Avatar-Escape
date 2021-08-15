@@ -109,6 +109,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7591729531090041816}
+  enemyCollisionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1d3ade29190d04caeb90d5bd2ecc5377, type: 2}
 --- !u!65 &1950869367761471061
 BoxCollider:
   m_ObjectHideFlags: 0

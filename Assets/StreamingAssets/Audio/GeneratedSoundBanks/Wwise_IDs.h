@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_ENEMY_APPEARS_PIG = 4198696536U;
         static const AkUniqueID PLAY_ENEMY_APPEARS_SPAN = 2108511140U;
         static const AkUniqueID PLAY_ENEMY_GOTHIT = 3822898220U;
+        static const AkUniqueID PLAY_HANDS_WIND = 880268317U;
         static const AkUniqueID PLAY_JINGE_WIN = 3838663630U;
         static const AkUniqueID PLAY_JINGLE_LOSE = 1338643067U;
         static const AkUniqueID PLAY_LEVEL_MUSIC = 557932600U;
