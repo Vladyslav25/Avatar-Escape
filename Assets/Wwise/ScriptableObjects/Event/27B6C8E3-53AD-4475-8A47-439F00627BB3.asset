@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321f717bbbabe4f4aaf9d9e44f0edf10, type: 3}
+  m_Name: 27B6C8E3-53AD-4475-8A47-439F00627BB3
+  m_EditorClassIdentifier: 
+  objectName: SetMidLife
+  id: 3886453733
+  guid: 27B6C8E3-53AD-4475-8A47-439F00627BB3

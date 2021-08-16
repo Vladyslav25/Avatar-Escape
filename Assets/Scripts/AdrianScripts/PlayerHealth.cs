@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 Debug.Log("MId");
                 //_ = m_StopNormalLife.Post(this.gameObject);
-                // _ = m_midLifeEvent.Post(this.gameObject);
+                 _ = m_midLifeEvent.Post(this.gameObject);
             }
         }
 
@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 Debug.Log("LOw");
                 //_ = m_StopMidLide.Post(this.gameObject);
-                //_ = m_lowLifeEvent.Post(this.gameObject);
+                _ = m_lowLifeEvent.Post(this.gameObject);
             }
         }
 

@@ -6,12 +6,15 @@
 				<SoundBank Name="Main" ID="{30944775-631C-4EB6-BCD7-5633F072D535}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Enemy_Appears_Kiss" ID="{84D4F5F8-865E-4039-81BE-13CF73E96D8B}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Test" ID="{072FF536-7413-41DA-98DB-7AEAE3385855}" WorkUnitID="{72A11777-5AA3-4182-93D8-EF9B1631819E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Wind" ID="{9872D670-F174-422A-8E56-590430EC6965}" WorkUnitID="{015393D1-5444-457C-B004-AD438BC517ED}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_Life_Med" ID="{F907DD50-F389-429A-9E83-A4FAC11FE894}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Enemy_Appears_Span" ID="{8E87BE81-DFBB-4337-9A0C-1DA3713CA1DA}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SetMidLife" ID="{27B6C8E3-53AD-4475-8A47-439F00627BB3}" WorkUnitID="{3653E329-4831-4A33-BD8F-7A9AB672E30B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_Life_Full" ID="{47C9D450-6AFB-460D-86DB-4D89355B43CE}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jinge_Win" ID="{958D46D1-1D69-4663-AF3A-6D965547DFD9}" WorkUnitID="{856238D8-6E21-443A-888B-8A96C4F64070}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jingle_Lose" ID="{4F6F9A3A-9BF9-47D1-9FA1-EE7C5CE683AF}" WorkUnitID="{856238D8-6E21-443A-888B-8A96C4F64070}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SetLowLife" ID="{93BD59A0-0C39-47EE-9058-231856B9CB9C}" WorkUnitID="{3653E329-4831-4A33-BD8F-7A9AB672E30B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Enemy_Appears_Pig" ID="{578F4FD2-FD06-4899-86FF-90320BAF732F}" WorkUnitID="{801BFD17-1C76-4D3F-89E6-DB504453F2CA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_Music" ID="{0FC87265-E1C7-48AA-8537-D4F03F52BC8C}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_Life_Low" ID="{DAE68E91-82A6-48F4-A8D7-0B18E782271A}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
@@ -22,6 +25,7 @@
 						<ObjectRef Name="Stop_Music_Life_Full" ID="{E7B5B8F6-E497-4E12-A7F6-F72AE0148140}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Water" ID="{325FBA51-A0DE-4E8C-B907-0E80F1C4C978}" WorkUnitID="{015393D1-5444-457C-B004-AD438BC517ED}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_Life_Low" ID="{7758BE04-E679-4F2B-BECF-93996DB3B2F6}" WorkUnitID="{4F96E794-9B5D-4667-B754-CB06A834822E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SetHighLife" ID="{AC9F9F95-1641-4FC3-94C1-EBF1B0111B8F}" WorkUnitID="{3653E329-4831-4A33-BD8F-7A9AB672E30B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

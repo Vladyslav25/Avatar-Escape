@@ -552,7 +552,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 29e353363148334abd8f7a9ab672e30b
     GuidInternal: 
-    m_lastTime: -8585726154505955437
+    m_lastTime: -8585724786989444459
     List:
     - name: Play_Hands_Wind
       guid: 352ca18a0e7c80498666acbbfd565a1d
@@ -568,6 +568,57 @@ MonoBehaviour:
         ObjectType: 3
         guid: 352ca18a0e7c80498666acbbfd565a1d
       Path: Events\Player\Play_Hands_Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetHighLife
+      guid: 959f9fac4116c34f94c1ebf1b0111b8f
+      id: 75860749
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 29e353363148334abd8f7a9ab672e30b
+      - ElementName: SetHighLife
+        ObjectType: 3
+        guid: 959f9fac4116c34f94c1ebf1b0111b8f
+      Path: Events\Player\SetHighLife
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetLowLife
+      guid: a059bd93390cee479058231856b9cb9c
+      id: 2504790929
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 29e353363148334abd8f7a9ab672e30b
+      - ElementName: SetLowLife
+        ObjectType: 3
+        guid: a059bd93390cee479058231856b9cb9c
+      Path: Events\Player\SetLowLife
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetMidLife
+      guid: e3c8b627ad5375448a47439f00627bb3
+      id: 3886453733
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 29e353363148334abd8f7a9ab672e30b
+      - ElementName: SetMidLife
+        ObjectType: 3
+        guid: e3c8b627ad5375448a47439f00627bb3
+      Path: Events\Player\SetMidLife
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -816,7 +867,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585726508745808585
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000d0000000f0000001000000012000000180000001a0000001f00000021000000290000002c00000035000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000d0000000f0000001000000012000000180000001a0000001d0000001f00000021000000290000002c00000035000000
   ExpandedWaapiItemIds: 020000000f00000017000000190000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

@@ -27,9 +27,13 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC_LIFE_LOW = 800370703U;
         static const AkUniqueID PLAY_MUSIC_LIFE_MED = 1169331431U;
         static const AkUniqueID PLAY_WOOD_BREAK = 1136267813U;
+        static const AkUniqueID SETHIGHLIFE = 75860749U;
+        static const AkUniqueID SETLOWLIFE = 2504790929U;
+        static const AkUniqueID SETMIDLIFE = 3886453733U;
         static const AkUniqueID STOP_MUSIC_LIFE_FULL = 759250546U;
         static const AkUniqueID STOP_MUSIC_LIFE_LOW = 3241769353U;
         static const AkUniqueID STOP_MUSIC_LIFE_MED = 3677840433U;
+        static const AkUniqueID TEST = 3157003241U;
     } // namespace EVENTS
 
     namespace STATES
