@@ -23,7 +23,27 @@
 						<Action Name="" ID="{1AE82586-C307-4F37-877F-9E9722C81766}" ShortID="656958811">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Life_Med" ID="{24763C58-7F46-4291-A4BE-1C8F93E02D28}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+									<ObjectRef Name="MedLife" ID="{AA4CF516-288A-41CC-AA21-892C0B8717C2}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C18F1C22-E4F2-42E2-814B-32EA9BC4F383}" ShortID="331897767">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MaxLife" ID="{F9F5050D-B6B7-4AFC-8B5A-D842334E4CAE}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{840A4AAA-F35A-4DF6-AE17-EC4FEB2430BC}" ShortID="790276946">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LowLife" ID="{B9CA930E-1E26-4EAE-91D8-72C04D9E11E8}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -34,7 +54,27 @@
 						<Action Name="" ID="{74A6EAE1-0E60-4B12-9D70-8560D0909F03}" ShortID="391633929">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Life_Low" ID="{6DF310D6-B3BE-46B7-8C7A-0E70742B44F5}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+									<ObjectRef Name="LowLife" ID="{B9CA930E-1E26-4EAE-91D8-72C04D9E11E8}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{24F97402-D078-4432-B5C0-A561368C50C4}" ShortID="980571968">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MedLife" ID="{AA4CF516-288A-41CC-AA21-892C0B8717C2}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F0D64608-9431-481B-ABCC-9BB6615F0D57}" ShortID="1064308750">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MaxLife" ID="{F9F5050D-B6B7-4AFC-8B5A-D842334E4CAE}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -59,7 +99,27 @@
 						<Action Name="" ID="{6E3FDBC6-D76C-43DE-A38C-5252B4F01DA1}" ShortID="489675320">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Life_Full" ID="{7921619C-D968-4923-8B1E-219B4EB23BF9}" WorkUnitID="{8F228AA5-4406-4BB2-9B1B-2EB2F324C23E}"/>
+									<ObjectRef Name="MaxLife" ID="{F9F5050D-B6B7-4AFC-8B5A-D842334E4CAE}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1AD22940-DB5E-4931-B21D-4BC8AB78B328}" ShortID="373954939">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LowLife" ID="{B9CA930E-1E26-4EAE-91D8-72C04D9E11E8}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5A23FF47-6F86-4DA8-84AC-3FE7CF2C1FDB}" ShortID="459721975">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MedLife" ID="{AA4CF516-288A-41CC-AA21-892C0B8717C2}" WorkUnitID="{7748D411-F510-43BE-A229-1C1E2E29681B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
