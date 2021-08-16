@@ -18,6 +18,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SetLowLife" ID="{93BD59A0-0C39-47EE-9058-231856B9CB9C}">
+					<ChildrenList>
+						<Action Name="" ID="{2028F86F-BFD9-4603-9263-804C7D1AA66A}" ShortID="72404433">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Low_Life" ID="{7EC2F8CC-4D11-4259-AE5D-6D6189F713C0}" WorkUnitID="{8BD2E3D2-0AF7-4E7F-9981-353336F56379}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SetMidLife" ID="{27B6C8E3-53AD-4475-8A47-439F00627BB3}">
+					<ChildrenList>
+						<Action Name="" ID="{D943D3F9-5444-4B26-ABCD-CDA61311A584}" ShortID="608365990">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mid_Life" ID="{CEA8636A-DD32-4774-9EF5-EC61508FA08B}" WorkUnitID="{8BD2E3D2-0AF7-4E7F-9981-353336F56379}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SetHighLife" ID="{AC9F9F95-1641-4FC3-94C1-EBF1B0111B8F}">
+					<ChildrenList>
+						<Action Name="" ID="{93D8A139-2C11-489E-AC71-AD252E5E8F07}" ShortID="275984207">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Max_Life" ID="{C45B7266-4904-4E4F-A9E0-DA6D0A2B9220}" WorkUnitID="{8BD2E3D2-0AF7-4E7F-9981-353336F56379}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
